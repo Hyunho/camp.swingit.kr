@@ -272,7 +272,7 @@ const staffs = [
   { name: '주르', },
   { name: '꼬냥이', },
   { name: '혀기', },
-  { name: '후덕삼', },
+  { name: '북실북실', },
   { name: '만듀', },
   { name: '칠면조', },
   { name: '죠죠', },
