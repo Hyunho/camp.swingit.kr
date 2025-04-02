@@ -266,6 +266,9 @@ const staffs = [
     name: '후덕삼',
     imageurl: '/images/2025/staff/후덕삼.jpeg',
   },
+  {
+    name: '칠면조',
+  },
 ]
 
 function Staffs() {
