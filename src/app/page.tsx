@@ -267,7 +267,7 @@ function Staffs() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8 mt-10">
         <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4">
           {staffs.map((staff) => (
-            <div className="bg-white rounded-2xl shadow p-2 flex flex-col items-center text-center">
+            <div key={staff.name} className="bg-white rounded-2xl shadow p-2 flex flex-col items-center text-center">
               <img src={staff.imageurl} alt={staff.name} className="w-24 h-24 rounded-full object-cover mb-2" />
               <div className="text-sm font-semibold">{staff.name}</div>
               {/* <div className="text-xs text-gray-500">{staff.name}</div> */}
