@@ -211,6 +211,10 @@ const staffs = [
     imageurl: '/images/2025/staff/왕태.jpeg',
   },
   {
+    name: 'Roger',
+    imageurl: '/images/2025/staff/Roger.jpeg',
+  },
+  {
     name: '고즈',
     imageurl: '/images/2025/staff/고즈.jpeg',
   },
@@ -233,6 +237,10 @@ const staffs = [
   {
     name: '시니',
     imageurl: '/images/2025/staff/시니.jpeg',
+  },
+  {
+    name: '쓰리',
+    imageurl: '/images/2025/staff/쓰리.jpeg',
   },
   {
     name: '압뽀',
@@ -459,12 +467,12 @@ const dj_people= [
       '/images/2025/DJ/메이저.jpeg'
   },
   {
-    name: '쓴귤',
+    name: 'DJ 쓴귤',
     imageUrl:
       '/images/2025/DJ/쓴귤.jpeg'
   },
   {
-    name: '아드리안',
+    name: 'DJ 아드리안',
     imageUrl:
       '/images/2025/DJ/아드리안.jpeg'
   },
