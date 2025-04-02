@@ -180,7 +180,7 @@ const instructor_people= [
 const staffs = [
   {
     name: '아다마스',
-    imageUrl: '/images/2025/staff/아다마스.jpeg',
+    imageurl: '/images/2025/staff/아다마스.jpeg',
   },
   {
     name: '들라',
@@ -276,9 +276,14 @@ function Staffs() {
         <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
           {staffs.map((staff) => (
             <div key={staff.name} className="bg-white rounded-2xl shadow p-2 flex flex-col items-center text-center">
-              <img src={staff.imageurl} alt={staff.name} className="w-24 h-24 sm:w-32 sm:h-32 rounded-full object-cover mb-2" />
+              <Image 
+                src={staff.imageurl || ''} 
+                alt={staff.name} 
+                width={128}
+                height={128}
+                className="w-24 h-24 sm:w-32 sm:h-32 rounded-full object-cover mb-2" 
+              />
               <div className="text-sm font-semibold">{staff.name}</div>
-              {/* <div className="text-xs text-gray-500">{staff.name}</div> */}
             </div>
           ))}
         </div>
