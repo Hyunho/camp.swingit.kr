@@ -177,6 +177,108 @@ const instructor_people= [
   // More people...
 ]
 
+const staffs = [
+  {
+    name: '아다마스',
+    imageUrl: '/images/2025/staff/아다마스.jpeg',
+  },
+  {
+    name: '들라',
+    imageurl: '/images/2025/staff/들라.jpeg',
+  },
+  {
+    name: '초코미르',
+    imageurl: '/images/2025/staff/초코미르.jpeg',
+  },
+  {
+    name: '정양',
+    imageurl: '/images/2025/staff/정양.jpeg',
+  },
+  {
+    name: '프리',
+    imageurl: '/images/2025/staff/프리.jpeg',
+  },
+  {
+    name: '대뜩',
+    imageurl: '/images/2025/staff/대뜩.jpeg',
+  },
+  {
+    name: '초코',
+    imageurl: '/images/2025/staff/초코.jpeg',
+  },
+  {
+    name: '왕태',
+    imageurl: '/images/2025/staff/왕태.jpeg',
+  },
+  {
+    name: '고즈',
+    imageurl: '/images/2025/staff/고즈.jpeg',
+  },
+  {
+    name: '나오미',
+    imageurl: '/images/2025/staff/나오미.jpeg',
+  },
+  {
+    name: '다찌',
+    imageurl: '/images/2025/staff/다찌.jpeg',
+  },
+  {
+    name: '베아',
+    imageurl: '/images/2025/staff/베아.jpeg',
+  },
+  {
+    name: '보리야',
+    imageurl: '/images/2025/staff/보리야.jpeg',
+  },
+  {
+    name: '시니',
+    imageurl: '/images/2025/staff/시니.jpeg',
+  },
+  {
+    name: '압뽀',
+    imageurl: '/images/2025/staff/압뽀.jpeg',
+  },
+  {
+    name: '엘리',
+    imageurl: '/images/2025/staff/엘리.jpeg',
+  },
+  {
+    name: '용보',
+    imageurl: '/images/2025/staff/용보.jpeg',
+  },
+  {
+    name: '카렌',
+    imageurl: '/images/2025/staff/카렌.jpeg',
+  },
+  {
+    name: '현힁',
+    imageurl: '/images/2025/staff/현힁.jpeg',
+  },
+  {
+    name: '후덕삼',
+    imageurl: '/images/2025/staff/후덕삼.jpeg',
+  },
+]
+
+function Staffs() {
+  return (
+    <div className="p-4">
+      <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Staffs</h2>
+      <div className="mx-auto max-w-7xl px-6 lg:px-8 mt-10">
+        <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4">
+          {staffs.map((staff) => (
+            <div className="bg-white rounded-2xl shadow p-2 flex flex-col items-center text-center">
+              <img src={staff.imageurl} alt={staff.name} className="w-24 h-24 rounded-full object-cover mb-2" />
+              <div className="text-sm font-semibold">{staff.name}</div>
+              {/* <div className="text-xs text-gray-500">{staff.name}</div> */}
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  )
+}
+
 function About() {
   return (
      <div className="bg-white py-8 md:py-12">
@@ -341,32 +443,30 @@ function Band() {
 }
 
 const dj_people= [
-  // {
-  //   name: 'DJ HaeRim',
-  //   role: 'Senior Designer',
-  //   imageUrl:
-  //     '/images/2024/dj4.png'
-  // },
   {
     name: 'DJ Philippe',
-    role: 'Senior Designer',
     imageUrl:
       '/images/2024/dj2.png'
   },
-  // {
-  //   name: 'DJ Major',
-  //   role: 'Senior Designer',
-  //   imageUrl:
-  //     '/images/2024/dj3.png'
-
-  // },
   {
     name: 'DJ Juan',
-    // name: 'Peter Loggins & Katja Završnik',
-    role: 'Senior Designer',
     imageUrl:
       '/images/2024/dj1.png'
-      // 'https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+  },
+  {
+    name: 'DJ 메이저',
+    imageUrl:
+      '/images/2025/DJ/메이저.jpeg'
+  },
+  {
+    name: '쓴귤',
+    imageUrl:
+      '/images/2025/DJ/쓴귤.jpeg'
+  },
+  {
+    name: '아드리안',
+    imageUrl:
+      '/images/2025/DJ/아드리안.jpeg'
   },
 ]
 
@@ -375,11 +475,6 @@ function DJs() {
     <div className="bg-white py-8 sm:py-12">
       <div className="mx-auto max-w-2xl lg:mx-0">
         <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">DJs</h2>
-         <p className="mt-6 text-lg leading-8 text-gray-600">
-          {/* More Local Dancers will be announced. <br/>
-          (로컬 댄서 라인업이 추가로 업데이트 될 예정입니다.)  */}
-         </p>
-          {/* The 2024 artists line up of Camp Swing It is as follows. */}
       </div>
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <ul
@@ -388,10 +483,8 @@ function DJs() {
         >
           {dj_people.map((person) => (
             <li key={person.name}>
-              <img className="mx-auto h-42 w-42 rounded-xl " src={person.imageUrl} alt="" />
-              {/* <img className="mx-auto h-42 w-42 rounded-full" src={person.imageUrl} alt="" /> */}
+              <img className="mx-auto h-42 w-42 rounded-xl object-cover aspect-square" src={person.imageUrl} alt={person.name} />
               <h3 className="mt-6 text-xl font-semibold Gleading-7 tracking-tight text-gray-900">{person.name}</h3>
-              {/* <p className="text-sm leading-6 text-gray-600">{person.description}</p> */}
             </li>
           ))}
         </ul>
@@ -721,6 +814,7 @@ function Album() {
   )
 }
 
+
 export default async function Home() {
   let articles = (await getAllArticles()).slice(0, 4)
 
@@ -830,6 +924,9 @@ export default async function Home() {
           </div>
         </div>
       </Container> */}
+      <Container>
+        <Staffs />
+      </Container>
       <Container>
         <hr/>
         <Album/>
