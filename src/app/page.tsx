@@ -345,7 +345,7 @@ function Instructors() {
             <li key={person.name}>
               {/* <img className="mx-auto h-42 w-42 rounded-full" src={person.imageUrl} alt="" /> */}
               {/* <video className="mx-auto h-42 w-42 rounded-full" src={person.videoUrl} alt={person.alt} /> */}
-              <video width="600" autoPlay loop muted>
+              <video width="600" autoPlay loop muted playsInline>
                 <source src={person.videoUrl} type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
