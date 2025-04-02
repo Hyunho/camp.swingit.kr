@@ -276,14 +276,22 @@ function Staffs() {
         <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
           {staffs.map((staff) => (
             <div key={staff.name} className="bg-white rounded-2xl shadow p-2 flex flex-col items-center text-center">
-              <Image 
-                src={staff.imageurl || ''} 
-                alt={staff.name} 
-                width={128}
-                height={128}
-                className="w-24 h-24 sm:w-32 sm:h-32 rounded-full object-cover mb-2" 
-              />
+              {staff.imageurl ? (
+                <div>
+                <Image 
+                  src={staff.imageurl} 
+                  alt={staff.name} 
+                  width={128}
+                  height={128}
+                  className="w-24 h-24 sm:w-32 sm:h-32 rounded-full object-cover mb-2" 
+                />
               <div className="text-sm font-semibold">{staff.name}</div>
+              </div>
+              ) : (
+                <div className="w-24 h-24 sm:w-32 sm:h-32 rounded-full flex items-center justify-center mb-2">
+                  <span className="font-medium text-lg">{staff.name}</span>
+                </div>
+              )}
             </div>
           ))}
         </div>
