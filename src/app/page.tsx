@@ -266,9 +266,20 @@ const staffs = [
     name: '후덕삼',
     imageurl: '/images/2025/staff/후덕삼.jpeg',
   },
-  {
-    name: '칠면조',
-  },
+  { name: '채르', },
+  { name: '번쩍번쩍호랑이', },
+  { name: '맥주피쳐', },
+  { name: '주르', },
+  { name: '꼬냥이', },
+  { name: '혀기', },
+  { name: '후덕삼', },
+  { name: '만듀', },
+  { name: '칠면조', },
+  { name: '죠죠', },
+  { name: 'B.B.', },
+  { name: '모찌', },
+  { name: 'Orlando', },
+  { name: '미노', },
 ]
 
 function Staffs() {
