@@ -1,4 +1,7 @@
 import { ArticleLayout } from '@/components/ArticleLayout'
+import Image from 'next/legacy/image'
+import meal from './meal_en.png'
+import allergens from './allergens.jpeg'
 
 
 export const article = {
@@ -6,7 +9,7 @@ export const article = {
   date: '2025-04-02',
   title: 'CSI 2025 Additional Event Announcement (2nd Notice)',
   description:
-    'CSI 2025 Additional Event Announcement (2nd Notice)',
+    'M&M Preliminary Round Time Change, Improvisation Competition Format, Class Schedule Announcement, Meal Plan Information',
 }
 
 export const metadata = {
@@ -56,6 +59,8 @@ export default (props) => <ArticleLayout article={article} {...props} />
 - Meals are prepared based on the registered number of participants, so only the assigned meal can be received.
 - Dining hall access will be managed via QR code scanning.
 
+<Image src={meal} alt="" style={{ borderRadius: '0' }} />
+<Image src={allergens} alt="" style={{ borderRadius: '0' }} />
 
 📍 For any further inquiries, please contact the event team.
  Thank you!

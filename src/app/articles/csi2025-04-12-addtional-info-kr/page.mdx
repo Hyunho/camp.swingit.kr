@@ -1,12 +1,14 @@
 import { ArticleLayout } from '@/components/ArticleLayout'
-
+import Image from 'next/legacy/image'
+import meal from './meal_kr.png'
+import allergens from './allergens.jpeg'
 
 export const article = {
   author: 'campswingit',
   date: '2025-04-02',
   title: 'CSI 2025 행사 추가 공지사항 2차',
   description:
-    'CSI 2025 행사 추가 공지사항 2차',
+    'M&M 예선 시간 변경 안내, 즉흥 부문 대회 진행 방식, 강습 스케줄 공지, 식단 안내',
 }
 
 export const metadata = {
@@ -56,6 +58,8 @@ export default (props) => <ArticleLayout article={article} {...props} />
 - 인원 수에 맞춰 준비된 본인 선택 식단 외의 음식은 제공되지 않습니다.
 - QR코드를 이용한 식당 출입 관리가 진행됩니다.
 
+<Image src={meal} alt="" style={{ borderRadius: '0' }} />
+<Image src={allergens} alt="" style={{ borderRadius: '0' }} />
 
 📍 추가 문의 사항이 있으면 운영팀에 연락해 주세요.
  감사합니다.

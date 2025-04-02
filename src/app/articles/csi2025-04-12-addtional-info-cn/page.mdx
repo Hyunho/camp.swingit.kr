@@ -1,4 +1,7 @@
 import { ArticleLayout } from '@/components/ArticleLayout'
+import Image from 'next/legacy/image'
+import meal from './meal_cn.png'
+import allergens from './allergens.jpeg'
 
 
 export const article = {
@@ -6,7 +9,7 @@ export const article = {
   date: '2025-04-02',
   title: 'CSI 2025 活动追加通知（第二次）',
   description:
-    'CSI 2025 活动追加通知（第二次）',
+    'M&M 预选赛时间调整, 即兴比赛规则, 课程时间表已公布, 餐饮安排',
 }
 
 export const metadata = {
@@ -55,6 +58,8 @@ export default (props) => <ArticleLayout article={article} {...props} />
 - 由于餐饮按报名人数准备，只能领取已选定的餐食。
 - 餐厅入场将通过 QR 码管理，请提前准备。
 
+<Image src={meal} alt="" style={{ borderRadius: '0' }} />
+<Image src={allergens} alt="" style={{ borderRadius: '0' }} />
 
 📍 如有任何疑问，请联系活动委員会。
  感谢您的理解与支持！
