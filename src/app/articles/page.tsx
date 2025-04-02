@@ -49,7 +49,7 @@ export default async function ArticlesIndex() {
       intro=""
     >
       <div className="md:border-l md:border-zinc-100 md:pl-6">
-        <div className="flex max-w-3xl flex-col space-y-16">
+        <div className="flex max-w-3xl flex-col space-y-12">
           {articles.map((article) => (
             <Article key={article.slug} article={article} />
           ))}
