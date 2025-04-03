@@ -503,6 +503,11 @@ const dj_people= [
     imageUrl:
       '/images/2025/DJ/아드리안.jpeg'
   },
+  {
+    name: 'DJ 해림',
+    imageUrl:
+      '/images/2025/DJ/해림.png'
+  },
 ]
 
 function DJs() {
