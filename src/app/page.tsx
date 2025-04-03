@@ -180,7 +180,7 @@ const instructor_people= [
 const staffs = [
   {
     name: '아다마스',
-    imageurl: '/images/2025/staff/아다마스.jpeg',
+    imageurl: '/images/2025/staff/아다마스.png',
   },
   {
     name: '들라',
