@@ -176,6 +176,114 @@ const instructor_people= [
   // },
   // More people...
 ]
+const local_instructors =  [
+  {
+    name : "견우", 
+    imageUrl : "/images/2025/instructors/견우.jpeg"
+  },
+  {
+    name : "뽈", 
+    imageUrl : "/images/2025/instructors/뽈.jpeg"
+  },
+  {
+    name : "이화", 
+    imageUrl : "/images/2025/instructors/이화.jpeg"
+  },
+  {
+    name : "들라", 
+    imageUrl : "/images/2025/instructors/들라.jpeg"
+  },
+  {
+    name : "랭보", 
+    imageUrl : "/images/2025/instructors/랭보.jpeg"
+  },
+  {
+    name : "홍지", 
+    imageUrl : "/images/2025/instructors/홍지.jpeg"
+  },
+  {
+    name : "뀨", 
+    imageUrl : "/images/2025/instructors/뀨.png"
+  },
+  {
+    name : "지희", 
+    imageUrl : "/images/2025/instructors/지희.png"
+  },
+  {
+    name : "안단테", 
+    imageUrl : "/images/2025/instructors/안단테.jpeg"
+  },
+  {
+    name : "메티", 
+    imageUrl : "/images/2025/instructors/메티.jpeg"
+  },
+  {
+    name : "리코", 
+    imageUrl : "/images/2025/instructors/리코.jpeg"
+  },
+  {
+    name : "클로이", 
+    imageUrl : "/images/2025/instructors/클로이.jpeg"
+  },
+  {
+    name : "짜장", 
+    imageUrl : "/images/2025/instructors/짜장.jpeg"
+  },
+  {
+    name : "오바쟁이", 
+    imageUrl : "/images/2025/instructors/오바쟁이.jpeg"
+  },
+  {
+    name : "테일", 
+    imageUrl : "/images/2025/instructors/테일.jpeg"
+  },
+  {
+    name : "하고", 
+    imageUrl : "/images/2025/instructors/하고.jpeg"
+  },
+  {
+    name : "스톰", 
+    imageUrl : "/images/2025/instructors/스톰.jpeg"
+  },
+  {
+    name : "까미", 
+    imageUrl : "/images/2025/instructors/까미.jpeg"
+  },
+  {
+    name : "잇츠", 
+    imageUrl : "/images/2025/instructors/잇츠.jpeg"
+  },
+  {
+    name : "조제", 
+    imageUrl : "/images/2025/instructors/조제.jpeg"
+  },
+]
+
+function LocalInstructors() {
+  return (
+    <div className="bg-white py-4 md:py-8">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8 mt-10">
+        <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
+          {local_instructors.map((instructor) => (
+            <div key={instructor.name} className="bg-white rounded-2xl shadow p-2 flex flex-col items-center text-center">
+              <div className="w-full aspect-square flex flex-col items-center">
+                <div className="relative w-48 h-48 sm:w-64 sm:h-64 bg-gray-100">
+                  <Image 
+                    src={instructor.imageUrl} 
+                    alt={instructor.name} 
+                    fill
+                    className="object-contain" 
+                  />
+                </div>
+                <div className="text-sm font-semibold mt-2">{instructor.name}</div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  )
+}
 
 const staffs = [
   {
@@ -287,22 +395,23 @@ function Staffs() {
     <div className="p-4">
       <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Staffs</h2>
       <div className="mx-auto max-w-7xl px-6 lg:px-8 mt-10">
-        <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
           {staffs.map((staff) => (
             <div key={staff.name} className="bg-white rounded-2xl shadow p-2 flex flex-col items-center text-center">
               {staff.imageurl ? (
-                <div>
-                <Image 
-                  src={staff.imageurl} 
-                  alt={staff.name} 
-                  width={128}
-                  height={128}
-                  className="w-24 h-24 sm:w-32 sm:h-32 rounded-full object-cover mb-2" 
-                />
-              <div className="text-sm font-semibold">{staff.name}</div>
-              </div>
+                <div className="w-full aspect-square flex flex-col items-center">
+                  <div className="relative w-24 h-24 sm:w-32 sm:h-32">
+                    <Image 
+                      src={staff.imageurl} 
+                      alt={staff.name} 
+                      fill
+                      className="rounded-full object-cover" 
+                    />
+                  </div>
+                  <div className="text-sm font-semibold mt-2">{staff.name}</div>
+                </div>
               ) : (
-                <div className="w-24 h-24 sm:w-32 sm:h-32 rounded-full flex items-center justify-center mb-2">
+                <div className="w-24 h-24 sm:w-32 sm:h-32 rounded-full flex items-center justify-center">
                   <span className="font-medium text-lg">{staff.name}</span>
                 </div>
               )}
@@ -928,6 +1037,7 @@ export default async function Home() {
       <Container className="mt-9">
         <hr/>
         <Instructors />
+        <LocalInstructors />
         <hr className="mt-9"/>
 
         {/* <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">BAND</h2>
