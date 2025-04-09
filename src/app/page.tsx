@@ -948,21 +948,6 @@ function Photos() {
   )
 }
 
-function Album() {
-  return (
-    <div className="bg-white py-8 sm:py-12">
-      <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Album</h2>
-      <div>
-        <p className="mt-6 text-lg leading-8 text-gray-600">
-          <li>
-            <a href="https://vvd.bz/gmO0" className="text-teal-500 hover:text-blue-700" target="_blank" rel="noopener noreferrer">Go to the CSI 2024 Album</a>
-          </li>
-        </p>
-      </div>
-    </div>
-  )
-}
-
 
 export default async function Home() {
   let articles = (await getAllArticles()).slice(0, 4)
@@ -1079,7 +1064,21 @@ export default async function Home() {
       </Container>
       <Container>
         <hr/>
-        <Album/>
+        <div className="bg-white py-24 sm:py-32">
+          <div className="mx-auto max-w-7xl px-6 lg:px-8">
+            <div className="mx-auto max-w-2xl lg:mx-0">
+              <h2 className="text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">Album</h2>
+              <p className="mt-8 text-pretty text-lg font-medium text-gray-500 sm:text-xl/8">
+                The CSI 2025 albums has been added. Check it out now.
+              </p>
+            </div>
+            <Link href="/albums" className="text-blue-500 hover:text-blue-700 block mt-2">
+              Go to Album page
+            </Link>
+          </div>
+
+        </div>
+
       </Container>
 
     </>
