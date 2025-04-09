@@ -1060,9 +1060,6 @@ export default async function Home() {
         </div>
       </Container> */}
       <Container>
-        <Staffs />
-      </Container>
-      <Container>
         <hr/>
         <div className="bg-white py-24 sm:py-12">
           <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
@@ -1146,27 +1143,49 @@ export default async function Home() {
                 </div>
                 <div className="pointer-events-none absolute inset-px rounded-lg ring-1 shadow-sm ring-black/5" />
               </div> */}
+              <Link href="/staffs" className="hover:text-blue-700 block mt-2">
+
+                <div className="relative lg:col-span-2">
+                  <div className="absolute inset-px rounded-lg bg-white max-lg:rounded-b-[2rem] lg:rounded-br-[2rem]" />
+                  <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] max-lg:rounded-b-[calc(2rem+1px)] lg:rounded-br-[calc(2rem+1px)]">
+                    {/* <img
+      alt=""
+      src="https://tailwindcss.com/plus-assets/img/component-images/bento-01-network.png"
+      className="h-80 object-cover"
+    /> */}
+                    <div className="p-10 pt-4">
+                      <h3 className="text-xl font-semibold text-indigo-600">Staffs</h3>
+                      <p className="mt-2 text-lg font-medium tracking-tight text-gray-950">Meet the amazing team behind Camp Swing It 2025!</p>
+                      <p className="mt-2 max-w-lg text-sm/6 text-gray-600">
+                        Meet the amazing team behind Camp Swing It 2025! We sincerely thank all staff members for their dedication and hard work in making this event possible. You are the heart of our event!
+                      </p>
+                      <Link href="/staffs" className="text-blue-500 hover:text-blue-700 block mt-2">Go to Staffs page</Link>
+                    </div>
+                  </div>
+                  <div className="pointer-events-none absolute inset-px rounded-lg ring-1 shadow-sm ring-black/5 max-lg:rounded-b-[2rem] lg:rounded-br-[2rem]" />
+                </div>
+              </Link>
               <Link href="/albums" className="hover:text-blue-700 block mt-2">
 
-              <div className="relative lg:col-span-2">
-                <div className="absolute inset-px rounded-lg bg-white max-lg:rounded-b-[2rem] lg:rounded-br-[2rem]" />
-                <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] max-lg:rounded-b-[calc(2rem+1px)] lg:rounded-br-[calc(2rem+1px)]">
-                  {/* <img
+                <div className="relative lg:col-span-2">
+                  <div className="absolute inset-px rounded-lg bg-white max-lg:rounded-b-[2rem] lg:rounded-br-[2rem]" />
+                  <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] max-lg:rounded-b-[calc(2rem+1px)] lg:rounded-br-[calc(2rem+1px)]">
+                    {/* <img
                     alt=""
                     src="https://tailwindcss.com/plus-assets/img/component-images/bento-01-network.png"
                     className="h-80 object-cover"
                   /> */}
-                  <div className="p-10 pt-4">
-                    <h3 className="text-xl font-semibold text-indigo-600">Album</h3>
-                    <p className="mt-2 text-lg font-medium tracking-tight text-gray-950">Check out the album</p>
-                    <p className="mt-2 max-w-lg text-sm/6 text-gray-600">
-                      The CSI 2025 albums has been added. Check it out now.
-                    </p>
-                    <Link href="/albums" className="text-blue-500 hover:text-blue-700 block mt-2">Go to Album page</Link>
+                    <div className="p-10 pt-4">
+                      <h3 className="text-xl font-semibold text-indigo-600">Album</h3>
+                      <p className="mt-2 text-lg font-medium tracking-tight text-gray-950">Check out the album</p>
+                      <p className="mt-2 max-w-lg text-sm/6 text-gray-600">
+                        The CSI 2025 albums has been added. Check it out now.
+                      </p>
+                      <Link href="/albums" className="text-blue-500 hover:text-blue-700 block mt-2">Go to Album page</Link>
+                    </div>
                   </div>
+                  <div className="pointer-events-none absolute inset-px rounded-lg ring-1 shadow-sm ring-black/5 max-lg:rounded-b-[2rem] lg:rounded-br-[2rem]" />
                 </div>
-                <div className="pointer-events-none absolute inset-px rounded-lg ring-1 shadow-sm ring-black/5 max-lg:rounded-b-[2rem] lg:rounded-br-[2rem]" />
-              </div>
               </Link>
             </div>
           </div>
