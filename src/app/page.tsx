@@ -1166,7 +1166,6 @@ export default async function Home() {
                 </div>
               </Link>
               <Link href="/albums" className="hover:text-blue-700 block mt-2">
-
                 <div className="relative lg:col-span-2">
                   <div className="absolute inset-px rounded-lg bg-white max-lg:rounded-b-[2rem] lg:rounded-br-[2rem]" />
                   <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] max-lg:rounded-b-[calc(2rem+1px)] lg:rounded-br-[calc(2rem+1px)]">
@@ -1182,6 +1181,27 @@ export default async function Home() {
                         The CSI 2025 albums has been added. Check it out now.
                       </p>
                       <Link href="/albums" className="text-blue-500 hover:text-blue-700 block mt-2">Go to Album page</Link>
+                    </div>
+                  </div>
+                  <div className="pointer-events-none absolute inset-px rounded-lg ring-1 shadow-sm ring-black/5 max-lg:rounded-b-[2rem] lg:rounded-br-[2rem]" />
+                </div>
+              </Link>
+              <Link href="/score_sheets" className="hover:text-blue-700 block mt-2">
+                <div className="relative lg:col-span-2">
+                  <div className="absolute inset-px rounded-lg bg-white max-lg:rounded-b-[2rem] lg:rounded-br-[2rem]" />
+                  <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] max-lg:rounded-b-[calc(2rem+1px)] lg:rounded-br-[calc(2rem+1px)]">
+                    {/* <img
+                    alt=""
+                    src="https://tailwindcss.com/plus-assets/img/component-images/bento-01-network.png"
+                    className="h-80 object-cover"
+                  /> */}
+                    <div className="p-10 pt-4">
+                        <h3 className="text-xl font-semibold text-indigo-600">Score Sheets</h3>
+                        <p className="mt-2 text-lg font-medium tracking-tight text-gray-950">Check the Results</p>
+                        <p className="mt-2 max-w-lg text-sm/6 text-gray-600">
+                        The KLHC 2025 score sheets are now available. Take a look at the competition results.
+                        </p>
+                      <Link href="/score_sheets" className="text-blue-500 hover:text-blue-700 block mt-2">Go to Score Sheets page</Link>
                     </div>
                   </div>
                   <div className="pointer-events-none absolute inset-px rounded-lg ring-1 shadow-sm ring-black/5 max-lg:rounded-b-[2rem] lg:rounded-br-[2rem]" />
