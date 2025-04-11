@@ -6,7 +6,7 @@ export default function PastEvents() {
     <SimpleLayout title="Past Events" intro="">
       <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
         <Link
-          href="https://campswingitkr-git-csi2025-hyunho-nohs-projects.vercel.app"
+          href="https://campswingitkr-git-csi2025-swingit.vercel.app"
           className="block p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow"
         >
           <h3 className="text-xl font-semibold text-gray-900">2025 Website</h3>
@@ -14,7 +14,7 @@ export default function PastEvents() {
         </Link>
         
         <Link
-          href="https://campswingitkr-git-csi2024-hyunho-nohs-projects.vercel.app"
+          href="https://campswingitkr-git-csi2024-swingit.vercel.app"
           className="block p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow"
         >
           <h3 className="text-xl font-semibold text-gray-900">2024 Website</h3>
