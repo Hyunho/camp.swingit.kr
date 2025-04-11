@@ -134,13 +134,14 @@ function MobileNavigation(
             <nav className="mt-6">
               <ul className="-my-2 divide-y divide-zinc-100 text-base text-zinc-800 dark:divide-zinc-100/5 dark:text-zinc-300">
                 <MobileNavItem href="/">HOME</MobileNavItem>
-                <MobileNavItem href="/articles">NOTICE</MobileNavItem>
+                <MobileNavItem href="/photos">PHOTOS</MobileNavItem>
+                <MobileNavItem href="/past_events">PAST EVENTS</MobileNavItem>
+                {/* <MobileNavItem href="/articles">NOTICE</MobileNavItem>
                 <MobileNavItem href="/csi">CSI</MobileNavItem>
                 <MobileNavItem href="/klhc">KLHC</MobileNavItem>
                 <MobileNavItem href="/schedule">SCHEDULE</MobileNavItem>
                 <MobileNavItem href="/venues">VENUES</MobileNavItem>
-                <MobileNavItem href="/registration">REGISTRATION</MobileNavItem>
-                <MobileNavItem href="/photos">PHOTOS</MobileNavItem>
+                <MobileNavItem href="/registration">REGISTRATION</MobileNavItem> */}
               </ul>
             </nav>
           </Popover.Panel>
@@ -170,7 +171,7 @@ function NavItem({
             : 'hover:text-teal-500 ',
         )}
       >
-        {children}
+        <span className="whitespace-nowrap">{children}</span>
         {isActive && (
           <span className="absolute inset-x-1 -bottom-px h-px bg-gradient-to-r from-teal-500/0 via-teal-500/40 to-teal-500/0 " />
         )}
@@ -188,14 +189,15 @@ function DesktopNavigation(props: React.ComponentPropsWithoutRef<'nav'>) {
         <NavItem href="/speaking">Speaking</NavItem>
         <NavItem href="/uses">Uses</NavItem> */}
         {/* <NavItem href="/">Workshop</NavItem> */}
-        <NavItem href="/">HOME</NavItem>
-        <NavItem href="/articles">NOTICE</NavItem>
+        <NavItem href="/">Home</NavItem>
+        <NavItem href="/photos">PHOTOS</NavItem>
+        <NavItem href="/past_events">PAST EVENTS</NavItem>
+        {/* <NavItem href="/articles">NOTICE</NavItem>
         <NavItem href="/csi">CSI</NavItem>
         <NavItem href="/klhc">KLHC</NavItem>
         <NavItem href="/schedule">SCHEDULE</NavItem>
         <NavItem href="/venues">VENUES</NavItem>
-        <NavItem href="/registration">REGISTRATION</NavItem>
-        <NavItem href="/photos">PHOTOS</NavItem>
+        <NavItem href="/registration">REGISTRATION</NavItem> */}
       </ul>
     </nav>
   )

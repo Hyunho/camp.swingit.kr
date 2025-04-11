@@ -861,8 +861,8 @@ function Role({ role }: { role: Role }) {
   )
 }
 
-function Resume() {
-  let resume: Array<Role> = [
+function BriefSchedule() {
+  let schedule: Array<Role> = [
     // {
     //   company: 'Planetaria',
     //   title: 'CEO',
@@ -883,15 +883,15 @@ function Resume() {
       title: 'KLHC',
       place_en: 'At CheongShim International Youth Centor',
       place_kr: '청심국제청소년수련원',
-      start: '4 Apr 2025',
-      end: '6 Apr',
+      start: '3 Apr 2026',
+      end: '5 Apr',
     },
     {
       title: 'Camp Swing It',
       place_en: 'At CheongShim International Youth Centor',
       place_kr: '청심국제청소년수련원',
-      start: '4 Apr 2025',
-      end: '6 Apr',
+      start: '3 Apr 2026',
+      end: '5 Apr',
     },
     // {
     //   company: 'Starbucks',
@@ -909,7 +909,7 @@ function Resume() {
         <span className="ml-3">Brief schedule</span>
       </h2>
       <ol className="mt-6 space-y-4">
-        {resume.map((role, roleIndex) => (
+        {schedule.map((role, roleIndex) => (
           <Role key={roleIndex} role={role} />
         ))}
       </ol>
@@ -958,11 +958,11 @@ export default async function Home() {
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl">
             {/* Software designer, founder, and amateur astronaut. */}
-            Camp Swing It 2025
+            Camp Swing It 2026
           </h1>
           <p className="mt-6 text-base text-zinc-600 ">
             {/* Camp Swing It description<br/> */}
-            4-6 APR 2025<br/>
+            3-5 APR 2026<br/>
             CheongShim International Youth Center, Gapyong, Korea<br/>
             (청심국제청소년수련원, 가평)
           </p>
@@ -1004,7 +1004,7 @@ export default async function Home() {
       {/* <Container className="mt-24 md:mt-28"> */}
       <Container>
         <hr/>
-        <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2 mt-9">
+        <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2 mt-9 mb-9">
           <div className="flex flex-col gap-12">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">NOTICE</h2>
             {/* {articles.map((article) => (
@@ -1015,34 +1015,21 @@ export default async function Home() {
           </div>
           <div className="space-y-10 lg:pl-16 xl:pl-24">
             {/* <Newsletter /> */}
-            <Resume />
+            <BriefSchedule />
           </div>
         </div>
       </Container>
-      <Container className="mt-9">
+      {/* <Container className="mt-9">
         <hr/>
         <Instructors />
         <LocalInstructors />
         <hr className="mt-9"/>
 
-        {/* <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">BAND</h2>
-        <p className="mt-6 text-lg leading-8 text-gray-600">
-          TBD
-        </p> */}
         <Band />
         <hr/>
-        {/* <Ticket /> */}
         <DJs/>
 
-        {/* <div className="bg-white py-8 md:py-12">
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">DJs</h2>
-          <div>
-            <p className="mt-6 text-lg leading-8 text-gray-600">
-              TBD
-          </p>
-          </div>
-        </div> */}
-      </Container>
+      </Container> */}
       {/* <Photos /> */}
       {/* <Container className="mt-9">
       </Container> */}
