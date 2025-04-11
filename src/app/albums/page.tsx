@@ -14,9 +14,9 @@ export default function Album() {
             <li>
               <a href="https://photos.app.goo.gl/9QvDtpHXgXAuFMXk6" className="text-teal-500 hover:text-blue-700" target="_blank" rel="noopener noreferrer">Photos by 조조</a>
             </li>
-            <li>
+            {/* <li>
               <a href="https://mybox.naver.com/share/list?shareKey=i19YPLdFE9JLm3X3LXTi2H7LQKE6WDursxalgZBi04MC" className="text-teal-500 hover:text-blue-700" target="_blank" rel="noopener noreferrer">Photos by Roger</a>
-            </li>
+            </li> */}
           </ul>
         </p>
       </div>
