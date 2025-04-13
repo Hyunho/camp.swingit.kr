@@ -977,6 +977,9 @@ export default async function Home() {
             The Ultimate Holiday for Swing Dancers in Asia and Beyond!<br/>
             跨越亚洲，汇聚世界各地摇摆舞者的盛大节日！
           </p>
+          <p className="mt-6 text-base text-zinc-600 font-bold">
+            Coming Soon!
+          </p>
 
           <div className="mt-6 flex gap-6">
             <SocialLink
