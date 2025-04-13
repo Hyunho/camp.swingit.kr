@@ -17,7 +17,13 @@ export default function Album() {
               <li className="bg-gray-50 p-4 rounded-lg hover:bg-gray-100 transition-colors">
                 <a href="https://photos.app.goo.gl/9QvDtpHXgXAuFMXk6" className="text-teal-600 hover:text-teal-700 font-medium flex items-center" target="_blank" rel="noopener noreferrer">
                   <span className="mr-2">📸</span>
-                  Photos by 조조
+                  Photos by 죠죠
+                </a>
+              </li>
+              <li className="bg-gray-50 p-4 rounded-lg hover:bg-gray-100 transition-colors">
+                <a href="https://photos.app.goo.gl/pHoMPerTJkHnBWA89" className="text-teal-600 hover:text-teal-700 font-medium flex items-center" target="_blank" rel="noopener noreferrer">
+                  <span className="mr-2">📸</span>
+                  CSI 2025 @Photo Zone (By Burno)
                 </a>
               </li>
               <li className="bg-gray-50 p-4 rounded-lg">
@@ -46,7 +52,7 @@ export default function Album() {
           <div className="bg-gray-50 p-4 rounded-lg hover:bg-gray-100 transition-colors">
             <a href="https://vvd.bz/gmO0" className="text-teal-600 hover:text-teal-700 font-medium flex items-center" target="_blank" rel="noopener noreferrer">
               <span className="mr-2">📸</span>
-              Go to the CSI 2024 Album
+              Photos by 다깡
             </a>
           </div>
         </div>
