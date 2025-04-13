@@ -76,13 +76,15 @@ function MoonIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
 function MobileNavItem({
   href,
   children,
+  target,
 }: {
   href: string
   children: React.ReactNode
+  target?: string
 }) {
   return (
     <li>
-      <Popover.Button as={Link} href={href} className="block py-2">
+      <Popover.Button as={Link} href={href} target={target} className="block py-2">
         {children}
       </Popover.Button>
     </li>
@@ -134,9 +136,9 @@ function MobileNavigation(
             <nav className="mt-6">
               <ul className="-my-2 divide-y divide-zinc-100 text-base text-zinc-800 dark:divide-zinc-100/5 dark:text-zinc-300">
                 <MobileNavItem href="/">Home</MobileNavItem>
+                <MobileNavItem href="https://campswingitkr-git-csi2025-swingit.vercel.app" target="_blank">CSI2025</MobileNavItem>
                 <MobileNavItem href="/photos">Photos</MobileNavItem>
                 <MobileNavItem href="/about">About</MobileNavItem>
-                <MobileNavItem href="/past_events">Past Events</MobileNavItem>
                 {/* <MobileNavItem href="/articles">NOTICE</MobileNavItem>
                 <MobileNavItem href="/csi">CSI</MobileNavItem>
                 <MobileNavItem href="/klhc">KLHC</MobileNavItem>
@@ -155,8 +157,10 @@ function MobileNavigation(
 function NavItem({
   href,
   children,
+  target,
 }: {
   href: string
+  target?: string
   children: React.ReactNode
 }) {
   let isActive = usePathname() === href
@@ -171,6 +175,7 @@ function NavItem({
             ? 'text-teal-500 '
             : 'hover:text-teal-500 ',
         )}
+        target={target}
       >
         <span className="whitespace-nowrap">{children}</span>
         {isActive && (
@@ -186,8 +191,8 @@ function DesktopNavigation(props: React.ComponentPropsWithoutRef<'nav'>) {
     <nav {...props}>
       <ul className="flex rounded-full bg-white/90 px-3 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur">
         <NavItem href="/">Home</NavItem>
+        <NavItem href="https://campswingitkr-git-csi2025-swingit.vercel.app" target="_blank">CSI2025</NavItem>
         <NavItem href="/photos">Photos</NavItem>
-        <NavItem href="/past_events">Past Events</NavItem>
         <NavItem href="/about">About</NavItem>
         {/* <NavItem href="/projects">Projects</NavItem>
         <NavItem href="/speaking">Speaking</NavItem>

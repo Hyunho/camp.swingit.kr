@@ -13,13 +13,13 @@ export default function PastEvents() {
           <p className="mt-2 text-gray-600">Visit SwingIt Camp 2025 Website</p>
         </Link>
         
-        <Link
+        {/* <Link
           href="https://campswingitkr-git-csi2024-swingit.vercel.app"
           className="block p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow"
         >
           <h3 className="text-xl font-semibold text-gray-900">2024 Website</h3>
           <p className="mt-2 text-gray-600">Visit SwingIt Camp 2024 Website</p>
-        </Link>
+        </Link> */}
       </div>
     </SimpleLayout>
   );
