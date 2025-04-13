@@ -5,10 +5,8 @@ import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
 import {
-  GitHubIcon,
   InstagramIcon,
-  LinkedInIcon,
-  TwitterIcon,
+  FacebookIcon,
 } from '@/components/SocialIcons'
 import portraitImage from '@/images/portrait.jpg'
 
@@ -69,59 +67,60 @@ export default function About() {
         </div>
         <div className="lg:order-first lg:row-span-2">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-            I’m Spencer Sharp. I live in New York City, where I design the
-            future.
+          The Ultimate Holiday for Swing Dancers in Asia and Beyond!<br/>
           </h1>
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
             <p>
-              I’ve loved making things for as long as I can remember, and wrote
-              my first program when I was 6 years old, just two weeks after my
-              mom brought home the brand new Macintosh LC 550 that I taught
-              myself to type on.
+              C.S.I. is an abbreviation for “Camp Swing It”, a Swing Camp started in 2009, 
+              and is a Swing Dance Camp that truly represents not only the Korean Swing Dance Scene, 
+              but also the whole Asia. It is an all-round Dance Event that covers a wide range of swing dances; 
+              including Balboa, Boogie-Woogie, Blues, and Tap, with a focus on Lindy Hop.
             </p>
             <p>
-              The only thing I loved more than computers as a kid was space.
-              When I was 8, I climbed the 40-foot oak tree at the back of our
-              yard while wearing my older sister’s motorcycle helmet, counted
-              down from three, and jumped — hoping the tree was tall enough that
-              with just a bit of momentum I’d be able to get to orbit.
+              This event is created by everyone from dancers who have just started 
+              dancing to professional dancers who have distinguished themselves at 
+              various events.3 nights and 4 days of workshops by famous dancers, 
+              parties with live bands, and K.L.H.C. (Korean Lindy Hop Championships), 
+              the best Lindy Hop competition in the country. It can be said to be a 
+              “Festival Of Dancers.”
             </p>
             <p>
-              I spent the next few summers indoors working on a rocket design,
-              while I recovered from the multiple surgeries it took to fix my
-              badly broken legs. It took nine iterations, but when I was 15 I
-              sent my dad’s Blackberry into orbit and was able to transmit a
-              photo back down to our family computer from space.
+              (C.S.I. 는 “Camp Swing It”의 약자로서 2009년부터 시작된 스윙캠프로서 대한민국 스윙댄스씬 
+              뿐만이 아니라 아시아를 대표하는 스윙댄스캠프입니다. 그리고 린디합을 중심으로 발보아, 
+              부기우기, 블루스, 탭 등 스윙댄스를 폭넓게 다루는 올라운드 댄스 행사를 추구합니다.
             </p>
             <p>
-              Today, I’m the founder of Planetaria, where we’re working on
-              civilian space suits and manned shuttle kits you can assemble at
-              home so that the next generation of kids really <em>can</em> make
-              it to orbit — from the comfort of their own backyards.
+              이제 막 춤을 시작한 댄서에서 부터 여러 행사에서 두각을 나타내고 있는 프로댄서들까지 하나가 되어 
+              만들어가는 이 행사는, 3박4일간 국내외 챔피언들의 워크샵과 라이브 밴드와 함께하는 파티, 
+              그리고 국내 최고의 린디합 대회인 K.L.H.C.(Korean Lindy Hop Championships)가 함께하는 
+              진정한 “댄서들의 축제” 입니다.)
             </p>
           </div>
         </div>
         <div className="lg:pl-20">
           <ul role="list">
-            <SocialLink href="#" icon={TwitterIcon}>
+            {/* <SocialLink href="#" icon={TwitterIcon}>
               Follow on Twitter
+            </SocialLink> */}
+            <SocialLink href="https://www.facebook.com/CampSwingIt" icon={FacebookIcon} className="mt-4">
+              Follow on Facebook
             </SocialLink>
-            <SocialLink href="#" icon={InstagramIcon} className="mt-4">
+            <SocialLink href="https://www.instagram.com/campswingit/" icon={InstagramIcon} className="mt-4">
               Follow on Instagram
             </SocialLink>
-            <SocialLink href="#" icon={GitHubIcon} className="mt-4">
+            {/* <SocialLink href="#" icon={GitHubIcon} className="mt-4">
               Follow on GitHub
-            </SocialLink>
-            <SocialLink href="#" icon={LinkedInIcon} className="mt-4">
+            </SocialLink> */}
+            {/* <SocialLink href="#" icon={LinkedInIcon} className="mt-4">
               Follow on LinkedIn
-            </SocialLink>
-            <SocialLink
+            </SocialLink> */}
+            {/* <SocialLink
               href="mailto:spencer@planetaria.tech"
               icon={MailIcon}
               className="mt-8 border-t border-zinc-100 pt-8 dark:border-zinc-700/40"
             >
               spencer@planetaria.tech
-            </SocialLink>
+            </SocialLink> */}
           </ul>
         </div>
       </div>

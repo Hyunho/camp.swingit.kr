@@ -972,6 +972,11 @@ export default async function Home() {
           <p className="mt-2 text-base text-blue-600 ">
             (CSI 2025 1차 티켓 판매가 12월 18일 ~  2025년 1월 15일에 열립니다.)
           </p> */}
+          <p className="mt-6 text-base text-zinc-600 font-bold">
+            아시아를 넘어 전 세계 스윙댄서들이 함께하는 스윙댄서의 명절!<br/>
+            The Ultimate Holiday for Swing Dancers in Asia and Beyond!<br/>
+            跨越亚洲，汇聚世界各地摇摆舞者的盛大节日！
+          </p>
 
           <div className="mt-6 flex gap-6">
             <SocialLink
@@ -998,9 +1003,9 @@ export default async function Home() {
         </div>
       </Container>
       <Photos />
-      <Container className="mt-9">
+      {/* <Container className="mt-9">
         <About/>
-      </Container>
+      </Container> */}
       {/* <Container className="mt-24 md:mt-28"> */}
       <Container>
         <hr/>

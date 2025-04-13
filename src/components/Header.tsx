@@ -133,9 +133,10 @@ function MobileNavigation(
             </div>
             <nav className="mt-6">
               <ul className="-my-2 divide-y divide-zinc-100 text-base text-zinc-800 dark:divide-zinc-100/5 dark:text-zinc-300">
-                <MobileNavItem href="/">HOME</MobileNavItem>
-                <MobileNavItem href="/photos">PHOTOS</MobileNavItem>
-                <MobileNavItem href="/past_events">PAST EVENTS</MobileNavItem>
+                <MobileNavItem href="/">Home</MobileNavItem>
+                <MobileNavItem href="/photos">Photos</MobileNavItem>
+                <MobileNavItem href="/about">About</MobileNavItem>
+                <MobileNavItem href="/past_events">Past Events</MobileNavItem>
                 {/* <MobileNavItem href="/articles">NOTICE</MobileNavItem>
                 <MobileNavItem href="/csi">CSI</MobileNavItem>
                 <MobileNavItem href="/klhc">KLHC</MobileNavItem>
@@ -184,14 +185,14 @@ function DesktopNavigation(props: React.ComponentPropsWithoutRef<'nav'>) {
   return (
     <nav {...props}>
       <ul className="flex rounded-full bg-white/90 px-3 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur">
-        {/* <NavItem href="/about">About</NavItem>
-        <NavItem href="/projects">Projects</NavItem>
+        <NavItem href="/">Home</NavItem>
+        <NavItem href="/photos">Photos</NavItem>
+        <NavItem href="/past_events">Past Events</NavItem>
+        <NavItem href="/about">About</NavItem>
+        {/* <NavItem href="/projects">Projects</NavItem>
         <NavItem href="/speaking">Speaking</NavItem>
         <NavItem href="/uses">Uses</NavItem> */}
         {/* <NavItem href="/">Workshop</NavItem> */}
-        <NavItem href="/">HOME</NavItem>
-        <NavItem href="/photos">PHOTOS</NavItem>
-        <NavItem href="/past_events">PAST EVENTS</NavItem>
         {/* <NavItem href="/articles">NOTICE</NavItem>
         <NavItem href="/csi">CSI</NavItem>
         <NavItem href="/klhc">KLHC</NavItem>
