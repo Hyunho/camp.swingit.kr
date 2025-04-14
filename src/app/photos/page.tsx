@@ -2,7 +2,7 @@ import { SimpleLayout } from '@/components/SimpleLayout'
 
 export default function Album() {
   return (
-    <SimpleLayout title="CSI Album" intro="">
+    <SimpleLayout title="CSI photos" intro="">
       <div className="space-y-12">
         <div className="bg-white rounded-lg shadow-sm p-6">
           <h2 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl mb-6">CSI 2025 Album</h2>
