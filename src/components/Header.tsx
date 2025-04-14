@@ -436,7 +436,7 @@ export function Header() {
         )}
         <div
           ref={headerRef}
-          className="top-0 z-10 h-16 pt-6"
+          className="top-0 z-10 h-16 pt-6 bg-sky-100"
           style={{
             position:
               'var(--header-position)' as React.CSSProperties['position'],
