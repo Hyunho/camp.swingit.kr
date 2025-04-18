@@ -23,7 +23,7 @@ export default function Album() {
               <li className="bg-gray-50 p-4 rounded-lg hover:bg-gray-100 transition-colors">
                 <a href="https://photos.app.goo.gl/pHoMPerTJkHnBWA89" className="text-teal-600 hover:text-teal-700 font-medium flex items-center" target="_blank" rel="noopener noreferrer">
                   <span className="mr-2">📸</span>
-                  CSI 2025 @Photo Zone (By Burno)
+                  CSI 2025 @Photo Zone By Burno
                 </a>
               </li>
               <li className="bg-gray-50 p-4 rounded-lg">
@@ -42,6 +42,18 @@ export default function Album() {
                     <a href="https://photos.app.goo.gl/pF49P2HvS9MLgEi68" className="text-teal-600 hover:text-teal-700" target="_blank" rel="noopener noreferrer">Sunday</a>
                   </li>
                 </ul>
+              </li>
+              <li className="bg-gray-50 p-4 rounded-lg hover:bg-gray-100 transition-colors">
+                <a href="https://photos.app.goo.gl/L3MDqhvqgjdTQm5o9" className="text-teal-600 hover:text-teal-700 font-medium flex items-center" target="_blank" rel="noopener noreferrer">
+                  <span className="mr-2">📸</span>
+                  Photos by Andrew Lin Yikai
+                </a>
+              </li>
+              <li className="bg-gray-50 p-4 rounded-lg hover:bg-gray-100 transition-colors">
+                <a href="https://photos.app.goo.gl/LgjXpWLzcvSfQ4g1A" className="text-teal-600 hover:text-teal-700 font-medium flex items-center" target="_blank" rel="noopener noreferrer">
+                  <span className="mr-2">📸</span>
+                  Photos by Somebe, Suh Jung Joon
+                </a>
               </li>
             </ul>
           </div>
