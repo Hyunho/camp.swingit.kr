@@ -881,15 +881,15 @@ function BriefSchedule() {
     // },
     {
       title: 'KLHC',
-      place_en: 'At CheongShim International Youth Centor',
-      place_kr: '청심국제청소년수련원',
+      place_en: 'At Gyeongseong Hall, Seoul',
+      place_kr: '경성홀, 서울',
       start: '3 Apr 2026',
       end: '5 Apr',
     },
     {
       title: 'Camp Swing It',
-      place_en: 'At CheongShim International Youth Centor',
-      place_kr: '청심국제청소년수련원',
+      place_en: 'At Gyeongseong Hall, Seoul',
+      place_kr: '경성홀, 서울',
       start: '3 Apr 2026',
       end: '5 Apr',
     },
@@ -963,8 +963,8 @@ export default async function Home() {
           <p className="mt-6 text-base text-zinc-600 ">
             {/* Camp Swing It description<br/> */}
             3-5 APR 2026<br/>
-            CheongShim International Youth Center, Gapyong, Korea<br/>
-            (청심국제청소년수련원, 가평)
+            Gyeongseong Hall, Seoul, Korea<br/>
+            (경성홀, 서울)
           </p>
           {/* <p className="mt-6 text-base text-blue-600 ">
             CSI 2025 1st Ticket registration will be open from 18 DEC to 15 JAN 2025.<br/>
