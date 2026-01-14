@@ -84,11 +84,32 @@ function ArrowDownIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   )
 }
 
-function Article({ article }: { article: ArticleWithSlug }) {
+function Article({
+  article,
+  badgeLabel,
+  highlight = false,
+}: {
+  article: ArticleWithSlug
+  badgeLabel?: string
+  highlight?: boolean
+}) {
   return (
-    <Card as="article">
+    <Card
+      as="article"
+      className={clsx(
+        highlight &&
+          'rounded-2xl border border-amber-200 bg-amber-50/60 p-6 shadow-lg shadow-amber-100/60 dark:border-amber-400/30 dark:bg-amber-500/10 dark:shadow-amber-500/10',
+      )}
+    >
       <Card.Title href={`/articles/${article.slug}`}>
-        {article.title}
+        <span className="inline-flex items-center gap-2">
+          <span>{article.title}</span>
+          {badgeLabel ? (
+            <span className="rounded-full bg-red-500 px-2 py-0.5 text-xs font-semibold text-white">
+              {badgeLabel}
+            </span>
+          ) : null}
+        </span>
       </Card.Title>
       <Card.Eyebrow as="time" dateTime={article.date} decorate>
         {formatDate(article.date)}
@@ -1066,6 +1087,8 @@ export default async function Home() {
                   (article) => article.slug === 'csi2026-01-13-notice-kr',
                 )!
               }
+              badgeLabel="New"
+              highlight
             />
           </div>
           <div className="space-y-10 lg:pl-16 xl:pl-24">
