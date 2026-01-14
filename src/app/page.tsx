@@ -1082,7 +1082,7 @@ export default async function Home() {
         </div>
       </Container>
       <Container>
-        <div className="mx-auto mb-9 mt-9 grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
+        <div className="mx-auto mb-9 mt-9 grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2 lg:items-end">
           <div className="flex flex-col gap-12">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
               NOTICE
