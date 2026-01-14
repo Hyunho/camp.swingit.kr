@@ -127,8 +127,8 @@ function SocialLink({
   icon: React.ComponentType<{ className?: string }>
 }) {
   return (
-    <Link className="group -m-1 p-1" {...props}>
-      <Icon className="h-6 w-6 fill-zinc-500 transition group-hover:fill-zinc-600 dark:fill-zinc-400 dark:group-hover:fill-zinc-300" />
+    <Link className="group flex items-center justify-center -m-1 p-1" {...props}>
+      <Icon className="h-7 w-7 fill-zinc-500 transition group-hover:fill-zinc-600 dark:fill-zinc-400 dark:group-hover:fill-zinc-300" />
     </Link>
   )
 }
@@ -1049,7 +1049,7 @@ export default async function Home() {
           </p>
           <p className="mt-6 text-base font-bold text-zinc-600">Coming Soon!</p>
 
-          <div className="mt-6 flex gap-6">
+          <div className="mt-6 flex items-center gap-6">
             <SocialLink
               href="https://www.facebook.com/CampSwingIt"
               aria-label="Follow on Facebook"
@@ -1074,7 +1074,6 @@ export default async function Home() {
         </div>
       </Container>
       <Container>
-        <hr />
         <div className="mx-auto mb-9 mt-9 grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
           <div className="flex flex-col gap-12">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
