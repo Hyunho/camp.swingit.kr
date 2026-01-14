@@ -1,3 +1,4 @@
+import Image from 'next/image'
 
 const features = [
     {
@@ -78,8 +79,14 @@ export function Pictures() {
                   <div className="mt-6">
                     <h4 className="text-sm font-medium text-gray-900">{feature.name}</h4>
                   </div>
-                  <div className="aspect-h-1 aspect-w-1 overflow-hidden rounded-lg bg-gray-100">
-                    <img src={feature.imageSrc} alt={feature.imageAlt} className="object-cover object-center" />
+                  <div className="relative aspect-h-1 aspect-w-1 overflow-hidden rounded-lg bg-gray-100">
+                    <Image
+                      src={feature.imageSrc}
+                      alt={feature.imageAlt}
+                      fill
+                      sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
+                      className="object-cover object-center"
+                    />
                   </div>
                 </div>
               ))}

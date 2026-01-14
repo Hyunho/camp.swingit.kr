@@ -624,11 +624,15 @@ function Band() {
         {people.map((person) => (
           <li key={person.name}>
             <div className="p-8">
-              <img
-                className="aspect-[1/1] rounded-2xl object-cover"
-                src={person.imageUrl}
-                alt=""
-              />
+              <div className="relative aspect-[1/1] rounded-2xl overflow-hidden">
+                <Image
+                  src={person.imageUrl}
+                  alt={person.name}
+                  fill
+                  sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+                  className="object-cover"
+                />
+              </div>
               <h3 className="mt-6 text-lg font-semibold leading-8 tracking-tight text-gray-900">
                 {person.name}
               </h3>
@@ -682,12 +686,16 @@ function DJs() {
         >
           {dj_people.map((person) => (
             <li key={person.name}>
-              <img
-                className="h-42 w-42 mx-auto aspect-square rounded-xl object-cover"
-                src={person.imageUrl}
-                alt={person.name}
-              />
-              <h3 className="Gleading-7 mt-6 text-xl font-semibold tracking-tight text-gray-900">
+              <div className="relative mx-auto aspect-square rounded-xl overflow-hidden">
+                <Image
+                  src={person.imageUrl}
+                  alt={person.name}
+                  fill
+                  sizes="(min-width: 1024px) 25vw, (min-width: 768px) 33vw, (min-width: 640px) 50vw, 100vw"
+                  className="object-cover"
+                />
+              </div>
+              <h3 className="leading-7 mt-6 text-xl font-semibold tracking-tight text-gray-900">
                 {person.name}
               </h3>
             </li>
