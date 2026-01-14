@@ -112,7 +112,7 @@ function SocialLink({
   )
 }
 
-const instructor_people= [
+const instructor_people = [
   {
     name: 'Nick & Kate',
     // name: 'Peter Loggins & Katja Završnik',
@@ -120,7 +120,7 @@ const instructor_people= [
     // imageUrl:
     //   '/images/2024/Peter&Katja.png',
     videoUrl: '/videos/2025/Nick&Kate.mp4',
-    alt: 'Nick & Kate'
+    alt: 'Nick & Kate',
   },
   {
     name: 'Peter & Naomi',
@@ -128,7 +128,7 @@ const instructor_people= [
     // imageUrl:
     //   '/images/2024/Hanna&Mattias.png',
     videoUrl: '/videos/2025/Peter&Naomi.mp4',
-    alt: 'Peter & Naomi'
+    alt: 'Peter & Naomi',
   },
   {
     name: 'Mattias & Hanna',
@@ -136,8 +136,7 @@ const instructor_people= [
     // imageUrl:
     //   '/images/2024/Sharon&Juan.png',
     videoUrl: '/videos/2025/Mattias&Hanna.mp4',
-    alt: 'Mattias & Hanna'
-
+    alt: 'Mattias & Hanna',
   },
   {
     name: 'Juan & Sharon',
@@ -145,7 +144,7 @@ const instructor_people= [
     // imageUrl:
     //   '/images/2024/Gustav&Laia.png',
     videoUrl: '/videos/2025/Juan&Sharon.mp4',
-    alt: 'Juan & Sharon'
+    alt: 'Juan & Sharon',
   },
   // {
   //   name: 'Sing Lim',
@@ -176,106 +175,111 @@ const instructor_people= [
   // },
   // More people...
 ]
-const local_instructors =  [
+const local_instructors = [
   {
-    name : "견우", 
-    imageUrl : "/images/2025/instructors/견우.jpeg"
+    name: '견우',
+    imageUrl: '/images/2025/instructors/견우.jpeg',
   },
   {
-    name : "뽈", 
-    imageUrl : "/images/2025/instructors/뽈.jpeg"
+    name: '뽈',
+    imageUrl: '/images/2025/instructors/뽈.jpeg',
   },
   {
-    name : "이화", 
-    imageUrl : "/images/2025/instructors/이화.jpeg"
+    name: '이화',
+    imageUrl: '/images/2025/instructors/이화.jpeg',
   },
   {
-    name : "들라", 
-    imageUrl : "/images/2025/instructors/들라.jpeg"
+    name: '들라',
+    imageUrl: '/images/2025/instructors/들라.jpeg',
   },
   {
-    name : "랭보", 
-    imageUrl : "/images/2025/instructors/랭보.jpeg"
+    name: '랭보',
+    imageUrl: '/images/2025/instructors/랭보.jpeg',
   },
   {
-    name : "홍지", 
-    imageUrl : "/images/2025/instructors/홍지.jpeg"
+    name: '홍지',
+    imageUrl: '/images/2025/instructors/홍지.jpeg',
   },
   {
-    name : "뀨", 
-    imageUrl : "/images/2025/instructors/뀨.png"
+    name: '뀨',
+    imageUrl: '/images/2025/instructors/뀨.png',
   },
   {
-    name : "지희", 
-    imageUrl : "/images/2025/instructors/지희.png"
+    name: '지희',
+    imageUrl: '/images/2025/instructors/지희.png',
   },
   {
-    name : "안단테", 
-    imageUrl : "/images/2025/instructors/안단테.jpeg"
+    name: '안단테',
+    imageUrl: '/images/2025/instructors/안단테.jpeg',
   },
   {
-    name : "메티", 
-    imageUrl : "/images/2025/instructors/메티.jpeg"
+    name: '메티',
+    imageUrl: '/images/2025/instructors/메티.jpeg',
   },
   {
-    name : "리코", 
-    imageUrl : "/images/2025/instructors/리코.jpeg"
+    name: '리코',
+    imageUrl: '/images/2025/instructors/리코.jpeg',
   },
   {
-    name : "클로이", 
-    imageUrl : "/images/2025/instructors/클로이.jpeg"
+    name: '클로이',
+    imageUrl: '/images/2025/instructors/클로이.jpeg',
   },
   {
-    name : "짜장", 
-    imageUrl : "/images/2025/instructors/짜장.jpeg"
+    name: '짜장',
+    imageUrl: '/images/2025/instructors/짜장.jpeg',
   },
   {
-    name : "오바쟁이", 
-    imageUrl : "/images/2025/instructors/오바쟁이.jpeg"
+    name: '오바쟁이',
+    imageUrl: '/images/2025/instructors/오바쟁이.jpeg',
   },
   {
-    name : "테일", 
-    imageUrl : "/images/2025/instructors/테일.jpeg"
+    name: '테일',
+    imageUrl: '/images/2025/instructors/테일.jpeg',
   },
   {
-    name : "하고", 
-    imageUrl : "/images/2025/instructors/하고.jpeg"
+    name: '하고',
+    imageUrl: '/images/2025/instructors/하고.jpeg',
   },
   {
-    name : "스톰", 
-    imageUrl : "/images/2025/instructors/스톰.jpeg"
+    name: '스톰',
+    imageUrl: '/images/2025/instructors/스톰.jpeg',
   },
   {
-    name : "까미", 
-    imageUrl : "/images/2025/instructors/까미.jpeg"
+    name: '까미',
+    imageUrl: '/images/2025/instructors/까미.jpeg',
   },
   {
-    name : "잇츠", 
-    imageUrl : "/images/2025/instructors/잇츠.jpeg"
+    name: '잇츠',
+    imageUrl: '/images/2025/instructors/잇츠.jpeg',
   },
   {
-    name : "조제", 
-    imageUrl : "/images/2025/instructors/조제.jpeg"
+    name: '조제',
+    imageUrl: '/images/2025/instructors/조제.jpeg',
   },
 ]
 
 function LocalInstructors() {
   return (
     <div className="bg-white py-4 md:py-8">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8 mt-10">
-        <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
+      <div className="mx-auto mt-10 max-w-7xl px-6 lg:px-8">
+        <div className="grid grid-cols-2 gap-4 sm:grid-cols-3">
           {local_instructors.map((instructor) => (
-            <div key={instructor.name} className="bg-white rounded-2xl shadow p-2 flex flex-col items-center text-center">
-              <div className="w-full aspect-square flex flex-col items-center">
-                <div className="relative w-48 h-48 sm:w-64 sm:h-64 bg-gray-100">
-                  <Image 
-                    src={instructor.imageUrl} 
-                    alt={instructor.name} 
+            <div
+              key={instructor.name}
+              className="flex flex-col items-center rounded-2xl bg-white p-2 text-center shadow"
+            >
+              <div className="flex aspect-square w-full flex-col items-center">
+                <div className="relative h-48 w-48 bg-gray-100 sm:h-64 sm:w-64">
+                  <Image
+                    src={instructor.imageUrl}
+                    alt={instructor.name}
                     fill
-                    className="object-contain" 
+                    className="object-contain"
                   />
                 </div>
-                <div className="text-sm font-semibold mt-2">{instructor.name}</div>
+                <div className="mt-2 text-sm font-semibold">
+                  {instructor.name}
+                </div>
               </div>
             </div>
           ))}
@@ -374,45 +378,50 @@ const staffs = [
     name: '후덕삼',
     imageurl: '/images/2025/staff/후덕삼.jpeg',
   },
-  { name: '채르', },
-  { name: '번쩍번쩍호랑이', },
-  { name: '맥주피쳐', },
-  { name: '주르', },
-  { name: '꼬냥이', },
-  { name: '혀기', },
-  { name: '북실북실', },
-  { name: '만듀', },
-  { name: '칠면조', },
-  { name: '죠죠', },
-  { name: 'B.B.', },
-  { name: '모찌', },
-  { name: 'Orlando', },
-  { name: '미노', },
+  { name: '채르' },
+  { name: '번쩍번쩍호랑이' },
+  { name: '맥주피쳐' },
+  { name: '주르' },
+  { name: '꼬냥이' },
+  { name: '혀기' },
+  { name: '북실북실' },
+  { name: '만듀' },
+  { name: '칠면조' },
+  { name: '죠죠' },
+  { name: 'B.B.' },
+  { name: '모찌' },
+  { name: 'Orlando' },
+  { name: '미노' },
 ]
 
 function Staffs() {
   return (
     <div className="p-4">
-      <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Staffs</h2>
-      <div className="mx-auto max-w-7xl px-6 lg:px-8 mt-10">
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+      <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+        Staffs
+      </h2>
+      <div className="mx-auto mt-10 max-w-7xl px-6 lg:px-8">
+        <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
           {staffs.map((staff) => (
-            <div key={staff.name} className="bg-white rounded-2xl shadow p-2 flex flex-col items-center text-center">
+            <div
+              key={staff.name}
+              className="flex flex-col items-center rounded-2xl bg-white p-2 text-center shadow"
+            >
               {staff.imageurl ? (
-                <div className="w-full aspect-square flex flex-col items-center">
-                  <div className="relative w-24 h-24 sm:w-32 sm:h-32">
-                    <Image 
-                      src={staff.imageurl} 
-                      alt={staff.name} 
+                <div className="flex aspect-square w-full flex-col items-center">
+                  <div className="relative h-24 w-24 sm:h-32 sm:w-32">
+                    <Image
+                      src={staff.imageurl}
+                      alt={staff.name}
                       fill
-                      className="rounded-full object-cover" 
+                      className="rounded-full object-cover"
                     />
                   </div>
-                  <div className="text-sm font-semibold mt-2">{staff.name}</div>
+                  <div className="mt-2 text-sm font-semibold">{staff.name}</div>
                 </div>
               ) : (
-                <div className="w-24 h-24 sm:w-32 sm:h-32 rounded-full flex items-center justify-center">
-                  <span className="font-medium text-lg">{staff.name}</span>
+                <div className="flex h-24 w-24 items-center justify-center rounded-full sm:h-32 sm:w-32">
+                  <span className="text-lg font-medium">{staff.name}</span>
                 </div>
               )}
             </div>
@@ -425,22 +434,40 @@ function Staffs() {
 
 function About() {
   return (
-     <div className="bg-white py-8 md:py-12">
-      <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">ABOUT</h2>
-        <div>
-          <p className="mt-6 text-lg leading-8 text-gray-600">
-            C.S.I. is an abbreviation for “Camp Swing It”, a Swing Camp started in 2009, and is a Swing Dance Camp that truly represents not only the Korean Swing Dance Scene, but also the whole Asia. It is an all-round Dance Event that covers a wide range of swing dances; including Balboa, Boogie-Woogie, Blues, and Tap, with a focus on Lindy Hop.
-          </p>
-          <p className="mt-6 text-lg leading-8 text-gray-600">
-            This event is created by everyone from dancers who have just started dancing to professional dancers who have distinguished themselves at various events.3 nights and 4 days of workshops by famous dancers, parties with live bands, and K.L.H.C. (Korean Lindy Hop Championships), the best Lindy Hop competition in the country. It can be said to be a “Festival Of Dancers.”
-          </p>
-          <p className="mt-6 text-lg leading-8 text-gray-600">
-            (C.S.I. 는 “Camp Swing It”의 약자로서 2009년부터 시작된 스윙캠프로서 대한민국 스윙댄스씬 뿐만이 아니라 아시아를 대표하는 스윙댄스캠프입니다. 그리고 린디합을 중심으로 발보아, 부기우기, 블루스, 탭 등 스윙댄스를 폭넓게 다루는 올라운드 댄스 행사를 추구합니다.
-          </p>
-          <p className="mt-6 text-lg leading-8 text-gray-600">
-            이제 막 춤을 시작한 댄서에서 부터 여러 행사에서 두각을 나타내고 있는 프로댄서들까지 하나가 되어 만들어가는 이 행사는, 3박4일간 국내외 챔피언들의 워크샵과 라이브 밴드와 함께하는 파티, 그리고 국내 최고의 린디합 대회인 K.L.H.C.(Korean Lindy Hop Championships)가 함께하는 진정한 “댄서들의 축제” 입니다.)
-          </p>
-       </div>
+    <div className="bg-white py-8 md:py-12">
+      <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+        ABOUT
+      </h2>
+      <div>
+        <p className="mt-6 text-lg leading-8 text-gray-600">
+          C.S.I. is an abbreviation for “Camp Swing It”, a Swing Camp started in
+          2009, and is a Swing Dance Camp that truly represents not only the
+          Korean Swing Dance Scene, but also the whole Asia. It is an all-round
+          Dance Event that covers a wide range of swing dances; including
+          Balboa, Boogie-Woogie, Blues, and Tap, with a focus on Lindy Hop.
+        </p>
+        <p className="mt-6 text-lg leading-8 text-gray-600">
+          This event is created by everyone from dancers who have just started
+          dancing to professional dancers who have distinguished themselves at
+          various events.3 nights and 4 days of workshops by famous dancers,
+          parties with live bands, and K.L.H.C. (Korean Lindy Hop
+          Championships), the best Lindy Hop competition in the country. It can
+          be said to be a “Festival Of Dancers.”
+        </p>
+        <p className="mt-6 text-lg leading-8 text-gray-600">
+          (C.S.I. 는 “Camp Swing It”의 약자로서 2009년부터 시작된 스윙캠프로서
+          대한민국 스윙댄스씬 뿐만이 아니라 아시아를 대표하는
+          스윙댄스캠프입니다. 그리고 린디합을 중심으로 발보아, 부기우기, 블루스,
+          탭 등 스윙댄스를 폭넓게 다루는 올라운드 댄스 행사를 추구합니다.
+        </p>
+        <p className="mt-6 text-lg leading-8 text-gray-600">
+          이제 막 춤을 시작한 댄서에서 부터 여러 행사에서 두각을 나타내고 있는
+          프로댄서들까지 하나가 되어 만들어가는 이 행사는, 3박4일간 국내외
+          챔피언들의 워크샵과 라이브 밴드와 함께하는 파티, 그리고 국내 최고의
+          린디합 대회인 K.L.H.C.(Korean Lindy Hop Championships)가 함께하는
+          진정한 “댄서들의 축제” 입니다.)
+        </p>
+      </div>
     </div>
   )
 }
@@ -449,12 +476,14 @@ function Instructors() {
   return (
     <div className="bg-white py-8 sm:py-12">
       <div className="mx-auto max-w-2xl lg:mx-0">
-        <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Dancers</h2>
-         {/* <p className="mt-6 text-lg leading-8 text-gray-600">
+        <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+          Dancers
+        </h2>
+        {/* <p className="mt-6 text-lg leading-8 text-gray-600">
           More Local Dancers will be announced. <br/>
           (로컬 댄서 라인업이 추가로 업데이트 될 예정입니다.) 
          </p> */}
-          {/* The 2024 artists line up of Camp Swing It is as follows. */}
+        {/* The 2024 artists line up of Camp Swing It is as follows. */}
       </div>
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <ul
@@ -469,31 +498,31 @@ function Instructors() {
                 <source src={person.videoUrl} type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
-              <h3 className="mt-6 text-xl font-semibold Gleading-7 tracking-tight text-gray-900">{person.name}</h3>
+              <h3 className="Gleading-7 mt-6 text-xl font-semibold tracking-tight text-gray-900">
+                {person.name}
+              </h3>
               {/* <p className="text-sm leading-6 text-gray-600">{person.description}</p> */}
             </li>
           ))}
         </ul>
       </div>
     </div>
-      )
-    }
+  )
+}
 
 const people = [
   {
     name: 'Swing It Orchestra (Big Band)',
     role: 'Co-Founder / CEO',
-    imageUrl:
-      '/images/2025/band_swingit.png',
-    bio: 'London\'s top vintage band, the Shirt Tail Stompers are firmly established at home and internationally playing Harlem Swing and the Hot Jazz of the 1920s, 30s and 40s. Featuring music from composers such as Duke Ellington, Benny Goodman and Count Basie.',
+    imageUrl: '/images/2025/band_swingit.png',
+    bio: "London's top vintage band, the Shirt Tail Stompers are firmly established at home and internationally playing Harlem Swing and the Hot Jazz of the 1920s, 30s and 40s. Featuring music from composers such as Duke Ellington, Benny Goodman and Count Basie.",
     twitterUrl: '#',
     linkedinUrl: '#',
   },
   {
     name: 'Naomi And Her Handsome Devils',
     role: 'Co-Founder / CEO',
-    imageUrl:
-      '/images/2025/band_naomi.png',
+    imageUrl: '/images/2025/band_naomi.png',
     bio: 'Brother Yusef is a self-taught musician and has been described as a master solo guitarist and a uniquely passionate vocalist. His performances are raw, honest, and as real as the genre has ever aspired to be.',
     twitterUrl: '#',
     linkedinUrl: '#',
@@ -501,8 +530,7 @@ const people = [
   {
     name: 'Adamas Kim And The Rhythm Shufflers',
     role: 'Co-Founder / CEO',
-    imageUrl:
-      '/images/2025/band_adamas.png',
+    imageUrl: '/images/2025/band_adamas.png',
     bio: 'This is a band specializing in vintage dance music like early jazz, swing, and boogie-woogie, known for their 9-10 member lineup. They focus on enjoying dance and music together, gaining fame in the swing dance scene since their 2019 debut, and work to popularize vintage jazz culture.',
     twitterUrl: '#',
     linkedinUrl: '#',
@@ -510,8 +538,7 @@ const people = [
   {
     name: 'Brother Yusef',
     role: 'Co-Founder / CEO',
-    imageUrl:
-      '/images/2025/band_yusef.png',
+    imageUrl: '/images/2025/band_yusef.png',
     bio: 'This is a band specializing in vintage dance music like early jazz, swing, and boogie-woogie, known for their 9-10 member lineup. They focus on enjoying dance and music together, gaining fame in the swing dance scene since their 2019 debut, and work to popularize vintage jazz culture.',
     twitterUrl: '#',
     linkedinUrl: '#',
@@ -519,9 +546,8 @@ const people = [
   {
     name: 'Project Band feat. Steven Coombe.',
     role: 'Co-Founder / CEO',
-    imageUrl:
-      '/images/2025/band_steven.png',
-    bio: 'London\'s top vintage band, the Shirt Tail Stompers are firmly established at home and internationally playing Harlem Swing and the Hot Jazz of the 1920s, 30s and 40s. Featuring music from composers such as Duke Ellington, Benny Goodman and Count Basie.',
+    imageUrl: '/images/2025/band_steven.png',
+    bio: "London's top vintage band, the Shirt Tail Stompers are firmly established at home and internationally playing Harlem Swing and the Hot Jazz of the 1920s, 30s and 40s. Featuring music from composers such as Duke Ellington, Benny Goodman and Count Basie.",
     twitterUrl: '#',
     linkedinUrl: '#',
   },
@@ -531,8 +557,10 @@ const people = [
 
 function Band() {
   return (
-  <div className="bg-white py-8 md:py-12">
-      <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Musicians</h2>
+    <div className="bg-white py-8 md:py-12">
+      <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+        Musicians
+      </h2>
       <div>
         {/* <p className="mt-6 text-lg leading-8 text-gray-600">
           Have you ever dreamed of dancing to a big band? If so, meet CSI&apos;s house band, Swing It Orchestra! <br/>
@@ -561,61 +589,60 @@ function Band() {
           Shirt Tail Stompers와 Adamas kim and the Rhythm shufflers와 함께하는 최고의 재즈 퓨전을 경험하세요! 할렘 스윙과 초기 재즈의 조화로 밤새도록 짜릿한 리듬을 즐길 수 있습니다.
         </p>
       </div> */}
-{/*    
+      {/*    
       <div>
         <p>
         </p>
       </div> */}
 
-
-          {/* <Image className="aspect-[1/1] rounded-2xl object-cover mt-10"  src="/images/2024/total_band.jpeg" alt="CSI 2025 Silhouette" width={500} height={500} /> */}
+      {/* <Image className="aspect-[1/1] rounded-2xl object-cover mt-10"  src="/images/2024/total_band.jpeg" alt="CSI 2025 Silhouette" width={500} height={500} /> */}
       <ul
-          role="list"
-          className="mx-auto mt-10 grid max-w-2xl grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 lg:mx-0 lg:max-w-none lg:grid-cols-3"
-        >
-          {people.map((person) => (
-            <li key={person.name}>
-              <div className='p-8'>
-                <img className="aspect-[1/1] rounded-2xl object-cover" src={person.imageUrl} alt="" />
-                <h3 className="mt-6 text-lg font-semibold leading-8 tracking-tight text-gray-900">{person.name}</h3>
-              </div>
-            </li>
-          ))}
-        </ul>
+        role="list"
+        className="mx-auto mt-10 grid max-w-2xl grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 lg:mx-0 lg:max-w-none lg:grid-cols-3"
+      >
+        {people.map((person) => (
+          <li key={person.name}>
+            <div className="p-8">
+              <img
+                className="aspect-[1/1] rounded-2xl object-cover"
+                src={person.imageUrl}
+                alt=""
+              />
+              <h3 className="mt-6 text-lg font-semibold leading-8 tracking-tight text-gray-900">
+                {person.name}
+              </h3>
+            </div>
+          </li>
+        ))}
+      </ul>
     </div>
   )
 }
 
-const dj_people= [
+const dj_people = [
   {
     name: 'DJ Philippe',
-    imageUrl:
-      '/images/2024/dj2.png'
+    imageUrl: '/images/2024/dj2.png',
   },
   {
     name: 'DJ Juan',
-    imageUrl:
-      '/images/2024/dj1.png'
+    imageUrl: '/images/2024/dj1.png',
   },
   {
     name: 'DJ 메이저',
-    imageUrl:
-      '/images/2025/DJ/메이저.jpeg'
+    imageUrl: '/images/2025/DJ/메이저.jpeg',
   },
   {
     name: 'DJ 쓴귤',
-    imageUrl:
-      '/images/2025/DJ/쓴귤.jpeg'
+    imageUrl: '/images/2025/DJ/쓴귤.jpeg',
   },
   {
     name: 'DJ 아드리안',
-    imageUrl:
-      '/images/2025/DJ/아드리안.jpeg'
+    imageUrl: '/images/2025/DJ/아드리안.jpeg',
   },
   {
     name: 'DJ 해림',
-    imageUrl:
-      '/images/2025/DJ/해림.png'
+    imageUrl: '/images/2025/DJ/해림.png',
   },
 ]
 
@@ -623,7 +650,9 @@ function DJs() {
   return (
     <div className="bg-white py-8 sm:py-12">
       <div className="mx-auto max-w-2xl lg:mx-0">
-        <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">DJs</h2>
+        <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+          DJs
+        </h2>
       </div>
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <ul
@@ -632,16 +661,21 @@ function DJs() {
         >
           {dj_people.map((person) => (
             <li key={person.name}>
-              <img className="mx-auto h-42 w-42 rounded-xl object-cover aspect-square" src={person.imageUrl} alt={person.name} />
-              <h3 className="mt-6 text-xl font-semibold Gleading-7 tracking-tight text-gray-900">{person.name}</h3>
+              <img
+                className="h-42 w-42 mx-auto aspect-square rounded-xl object-cover"
+                src={person.imageUrl}
+                alt={person.name}
+              />
+              <h3 className="Gleading-7 mt-6 text-xl font-semibold tracking-tight text-gray-900">
+                {person.name}
+              </h3>
             </li>
           ))}
         </ul>
       </div>
     </div>
-      )
-    }
-
+  )
+}
 
 const tiers = [
   {
@@ -651,32 +685,25 @@ const tiers = [
     // price: { monthly: '$15', annually: '$12' },
     price: { dollor: '$15', won: '₩12' },
     description: 'Everything necessary to get started.',
-    features: [
-      'Accommodation included', 
-      'Basic 2 nights. 1 night optional',
-    ],
+    features: ['Accommodation included', 'Basic 2 nights. 1 night optional'],
   },
   {
     name: 'Accommodation',
     id: 'tier-accommodation',
     href: '#',
     price: { dollor: '$15', won: '₩12' },
-    description: 'Everything in Basic, plus essential tools for growing your business.',
-    features: [
-      'Accommodation included', 
-      'Basic 2 nights. 1 night optional',
-    ],
+    description:
+      'Everything in Basic, plus essential tools for growing your business.',
+    features: ['Accommodation included', 'Basic 2 nights. 1 night optional'],
   },
   {
     name: 'Meals',
     id: 'tier-meals',
     href: '#',
     price: { dollor: '$15', won: '₩12' },
-    description: 'Everything in Basic, plus essential tools for growing your business.',
-    features: [
-      'Accommodation included', 
-      'Basic 2 nights. 1 night optional',
-    ],
+    description:
+      'Everything in Basic, plus essential tools for growing your business.',
+    features: ['Accommodation included', 'Basic 2 nights. 1 night optional'],
   },
   // {
   //   name: 'Day Pass Package',
@@ -685,8 +712,8 @@ const tiers = [
   //   price: { dollor: '$15', won: '₩12' },
   //   description: 'Everything in Basic, plus essential tools for growing your business.',
   //   features: [
-  //     'Accommodation not included', 
-  //     'Friday, Saturday, Sunday each', 
+  //     'Accommodation not included',
+  //     'Friday, Saturday, Sunday each',
   //   ],
   // },
   {
@@ -694,10 +721,11 @@ const tiers = [
     id: 'tier-workshop',
     href: '#',
     price: { dollor: '$15', won: '₩12' },
-    description: 'Everything in Basic, plus essential tools for growing your business.',
+    description:
+      'Everything in Basic, plus essential tools for growing your business.',
     features: [
       'Saturday accommodation included, Sunday optional',
-      'Saturday kids\' lessons',
+      "Saturday kids' lessons",
       '2 adults + 1 kid',
     ],
   },
@@ -738,7 +766,9 @@ function Ticket() {
     <div className="bg-white py-8 sm:py-12">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-4xl sm:text-center">
-          <h2 className="text-2xl font-semibold leading-7 text-indigo-600">Registration</h2>
+          <h2 className="text-2xl font-semibold leading-7 text-indigo-600">
+            Registration
+          </h2>
           <p className="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
             Choose the right ticket for&nbsp;you
           </p>
@@ -751,12 +781,20 @@ function Ticket() {
           <div className="isolate -mt-16 grid max-w-sm grid-cols-2 gap-y-16 divide-y divide-gray-100 sm:mx-auto lg:-mx-8 lg:mt-0 lg:max-w-none lg:grid-cols-4 lg:divide-x lg:divide-y-0 xl:-mx-4">
             {tiers.map((tier) => (
               <div key={tier.id} className="pt-16 lg:px-2 lg:pt-0 xl:px-4">
-                <h3 id={tier.id} className="text-2xl font-semibold leading-7 text-gray-900">
+                <h3
+                  id={tier.id}
+                  className="text-2xl font-semibold leading-7 text-gray-900"
+                >
                   {tier.name}
                 </h3>
                 <p className="mt-6 flex items-baseline gap-x-1">
-                  <span className="text-2xl font-bold tracking-tight text-gray-900">{tier.price.dollor}</span>
-                  <span className="text-2xl font-bold tracking-tight text-gray-900"> / {tier.price.won}</span>
+                  <span className="text-2xl font-bold tracking-tight text-gray-900">
+                    {tier.price.dollor}
+                  </span>
+                  <span className="text-2xl font-bold tracking-tight text-gray-900">
+                    {' '}
+                    / {tier.price.won}
+                  </span>
                   {/* <span className="text-sm font-semibold leading-6 text-gray-600">/month</span> */}
                 </p>
                 {/* <p className="mt-3 text-sm leading-6 text-gray-500">{tier.price.won} per month if paid annually</p> */}
@@ -767,11 +805,19 @@ function Ticket() {
                 >
                   Buy ticket
                 </a>
-                <p className="mt-10 text-sm font-semibold leading-6 text-gray-900">{tier.description}</p>
-                <ul role="list" className="mt-6 space-y-3 text-sm leading-6 text-gray-600">
+                <p className="mt-10 text-sm font-semibold leading-6 text-gray-900">
+                  {tier.description}
+                </p>
+                <ul
+                  role="list"
+                  className="mt-6 space-y-3 text-sm leading-6 text-gray-600"
+                >
                   {tier.features.map((feature) => (
                     <li key={feature} className="flex gap-x-3">
-                      <CheckCircleIcon className="h-6 w-5 flex-none text-indigo-600" aria-hidden="true" />
+                      <CheckCircleIcon
+                        className="h-6 w-5 flex-none text-indigo-600"
+                        aria-hidden="true"
+                      />
                       {feature}
                     </li>
                   ))}
@@ -844,7 +890,7 @@ function Role({ role }: { role: Role }) {
         </dd>
         <dt className="sr-only">Role</dt>
         <dd className="text-xs text-zinc-500 ">
-          {role.place_kr} <br/>
+          {role.place_kr} <br />
           {role.place_en}
         </dd>
         <dt className="sr-only">Date</dt>
@@ -903,7 +949,7 @@ function BriefSchedule() {
   ]
 
   return (
-    <div className="rounded-2xl mt-8 border border-zinc-100 p-6 ">
+    <div className="mt-8 rounded-2xl border border-zinc-100 p-6 ">
       <h2 className="flex text-sm font-semibold text-zinc-900">
         <BriefcaseIcon className="h-6 w-6 flex-none" />
         <span className="ml-3">Brief schedule</span>
@@ -925,8 +971,8 @@ function Photos() {
   let rotations = ['rotate-2', '-rotate-2', 'rotate-2', 'rotate-2', '-rotate-2']
 
   return (
-    <div className="mt-16 sm:mt-20 bg-sky-50">
-      <div className="-my-4 flex justify-center gap-5 overflow-hidden py-10 sm:py-10 sm:gap-8">
+    <div className="mt-16 bg-sky-50 sm:mt-20">
+      <div className="-my-4 flex justify-center gap-5 overflow-hidden py-10 sm:gap-8 sm:py-10">
         {[image1, image2, image3, image4, image5].map((image, imageIndex) => (
           <div
             key={image.src}
@@ -948,7 +994,6 @@ function Photos() {
   )
 }
 
-
 export default async function Home() {
   let articles = (await getAllArticles()).slice(0, 4)
 
@@ -962,8 +1007,10 @@ export default async function Home() {
           </h1>
           <p className="mt-6 text-base text-zinc-600 ">
             {/* Camp Swing It description<br/> */}
-            3-5 APR 2026<br/>
-            Gyeongseong Hall, Seoul, Korea<br/>
+            3-5 APR 2026
+            <br />
+            Gyeongseong Hall, Seoul, Korea
+            <br />
             (경성홀, 서울)
           </p>
           {/* <p className="mt-6 text-base text-blue-600 ">
@@ -972,14 +1019,14 @@ export default async function Home() {
           <p className="mt-2 text-base text-blue-600 ">
             (CSI 2025 1차 티켓 판매가 12월 18일 ~  2025년 1월 15일에 열립니다.)
           </p> */}
-          <p className="mt-6 text-base text-zinc-600 font-bold">
-            아시아를 넘어 전 세계 스윙댄서들이 함께하는 스윙댄서의 명절!<br/>
-            The Ultimate Holiday for Swing Dancers in Asia and Beyond!<br/>
+          <p className="mt-6 text-base font-bold text-zinc-600">
+            아시아를 넘어 전 세계 스윙댄서들이 함께하는 스윙댄서의 명절!
+            <br />
+            The Ultimate Holiday for Swing Dancers in Asia and Beyond!
+            <br />
             跨越亚洲，汇聚世界各地摇摆舞者的盛大节日！
           </p>
-          <p className="mt-6 text-base text-zinc-600 font-bold">
-            Coming Soon!
-          </p>
+          <p className="mt-6 text-base font-bold text-zinc-600">Coming Soon!</p>
 
           <div className="mt-6 flex gap-6">
             <SocialLink
@@ -1005,17 +1052,21 @@ export default async function Home() {
           </div>
         </div>
       </Container>
-      <Photos />
-      {/* <Container className="mt-9">
-        <About/>
-      </Container> */}
-      {/* <Container className="mt-24 md:mt-28"> */}
       <Container>
-        <hr/>
-        <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2 mt-9 mb-9">
+        <hr />
+        <div className="mx-auto mb-9 mt-9 grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
           <div className="flex flex-col gap-12">
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">NOTICE</h2>
-            <Article key="csi2026-01-13-notice-kr" article={articles.find(article => article.slug === 'csi2026-01-13-notice-kr')!} />
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+              NOTICE
+            </h2>
+            <Article
+              key="csi2026-01-13-notice-kr"
+              article={
+                articles.find(
+                  (article) => article.slug === 'csi2026-01-13-notice-kr',
+                )!
+              }
+            />
           </div>
           <div className="space-y-10 lg:pl-16 xl:pl-24">
             {/* <Newsletter /> */}
@@ -1023,6 +1074,11 @@ export default async function Home() {
           </div>
         </div>
       </Container>
+      <Photos />
+      {/* <Container className="mt-9">
+        <About/>
+      </Container> */}
+      {/* <Container className="mt-24 md:mt-28"> */}
       {/* <Container className="mt-9">
         <hr/>
         <Instructors />
@@ -1051,15 +1107,15 @@ export default async function Home() {
         </div>
       </Container> */}
       <Container>
-        <hr/>
+        <hr />
         <div className="bg-white py-24 sm:py-12">
           <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
             {/* <h2 className="text-base/7 font-semibold text-indigo-600">Deploy faster</h2> */}
-            <p className="mt-2 max-w-lg text-4xl font-semibold tracking-tight text-pretty text-gray-950 sm:text-5xl">
+            <p className="text-pretty mt-2 max-w-lg text-4xl font-semibold tracking-tight text-gray-950 sm:text-5xl">
               There are links to various information.
             </p>
             <div className="mt-10 grid grid-cols-1 gap-4 sm:mt-16 lg:grid-rows-2">
-            {/* <div className="mt-10 grid grid-cols-1 gap-4 sm:mt-16 lg:grid-cols-6 lg:grid-rows-2">
+              {/* <div className="mt-10 grid grid-cols-1 gap-4 sm:mt-16 lg:grid-cols-6 lg:grid-rows-2">
               <div className="relative lg:col-span-3">
                 <div className="absolute inset-px rounded-lg bg-white max-lg:rounded-t-[2rem] lg:rounded-tl-[2rem]" />
                 <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] max-lg:rounded-t-[calc(2rem+1px)] lg:rounded-tl-[calc(2rem+1px)]">
@@ -1134,7 +1190,7 @@ export default async function Home() {
                 </div>
                 <div className="pointer-events-none absolute inset-px rounded-lg ring-1 shadow-sm ring-black/5" />
               </div> */}
-              <Link href="/albums" className="hover:text-blue-700 block mt-2">
+              <Link href="/albums" className="mt-2 block hover:text-blue-700">
                 <div className="relative lg:col-span-2">
                   <div className="absolute inset-px rounded-lg bg-white max-lg:rounded-b-[2rem] lg:rounded-br-[2rem]" />
                   <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] max-lg:rounded-b-[calc(2rem+1px)] lg:rounded-br-[calc(2rem+1px)]">
@@ -1144,18 +1200,31 @@ export default async function Home() {
                     className="h-80 object-cover"
                   /> */}
                     <div className="p-10 pt-4">
-                      <h3 className="text-xl font-semibold text-indigo-600">Photos</h3>
-                      <p className="mt-2 text-lg font-medium tracking-tight text-gray-950">Check out the photos</p>
-                      <p className="mt-2 max-w-lg text-sm/6 text-gray-600">
-                        The Camp Swing It 2025 photos have been added. Check it out now.
+                      <h3 className="text-xl font-semibold text-indigo-600">
+                        Photos
+                      </h3>
+                      <p className="mt-2 text-lg font-medium tracking-tight text-gray-950">
+                        Check out the photos
                       </p>
-                      <Link href="/photos" className="text-blue-500 hover:text-blue-700 block mt-2">Go to Photos page</Link>
+                      <p className="mt-2 max-w-lg text-sm/6 text-gray-600">
+                        The Camp Swing It 2025 photos have been added. Check it
+                        out now.
+                      </p>
+                      <Link
+                        href="/photos"
+                        className="mt-2 block text-blue-500 hover:text-blue-700"
+                      >
+                        Go to Photos page
+                      </Link>
                     </div>
                   </div>
-                  <div className="pointer-events-none absolute inset-px rounded-lg ring-1 shadow-sm ring-black/5 max-lg:rounded-b-[2rem] lg:rounded-br-[2rem]" />
+                  <div className="pointer-events-none absolute inset-px rounded-lg shadow-sm ring-1 ring-black/5 max-lg:rounded-b-[2rem] lg:rounded-br-[2rem]" />
                 </div>
               </Link>
-              <Link href="/score_sheets" className="hover:text-blue-700 block mt-2">
+              <Link
+                href="/score_sheets"
+                className="mt-2 block hover:text-blue-700"
+              >
                 <div className="relative lg:col-span-2">
                   <div className="absolute inset-px rounded-lg bg-white max-lg:rounded-b-[2rem] lg:rounded-br-[2rem]" />
                   <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] max-lg:rounded-b-[calc(2rem+1px)] lg:rounded-br-[calc(2rem+1px)]">
@@ -1165,22 +1234,31 @@ export default async function Home() {
                     className="h-80 object-cover"
                   /> */}
                     <div className="p-10 pt-4">
-                        <h3 className="text-xl font-semibold text-indigo-600">Score Sheets</h3>
-                        <p className="mt-2 text-lg font-medium tracking-tight text-gray-950">Check the Results</p>
-                        <p className="mt-2 max-w-lg text-sm/6 text-gray-600">
-                        The KLHC 2025 score sheets are now available. Take a look at the competition results.
-                        </p>
-                      <Link href="/score_sheets" className="text-blue-500 hover:text-blue-700 block mt-2">Go to Score Sheets page</Link>
+                      <h3 className="text-xl font-semibold text-indigo-600">
+                        Score Sheets
+                      </h3>
+                      <p className="mt-2 text-lg font-medium tracking-tight text-gray-950">
+                        Check the Results
+                      </p>
+                      <p className="mt-2 max-w-lg text-sm/6 text-gray-600">
+                        The KLHC 2025 score sheets are now available. Take a
+                        look at the competition results.
+                      </p>
+                      <Link
+                        href="/score_sheets"
+                        className="mt-2 block text-blue-500 hover:text-blue-700"
+                      >
+                        Go to Score Sheets page
+                      </Link>
                     </div>
                   </div>
-                  <div className="pointer-events-none absolute inset-px rounded-lg ring-1 shadow-sm ring-black/5 max-lg:rounded-b-[2rem] lg:rounded-br-[2rem]" />
+                  <div className="pointer-events-none absolute inset-px rounded-lg shadow-sm ring-1 ring-black/5 max-lg:rounded-b-[2rem] lg:rounded-br-[2rem]" />
                 </div>
               </Link>
             </div>
           </div>
         </div>
       </Container>
-
     </>
   )
 }
