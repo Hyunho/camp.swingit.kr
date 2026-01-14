@@ -79,7 +79,7 @@ export function Pictures() {
                   <div className="mt-6">
                     <h4 className="text-sm font-medium text-gray-900">{feature.name}</h4>
                   </div>
-                  <div className="relative aspect-h-1 aspect-w-1 overflow-hidden rounded-lg bg-gray-100">
+                  <div className="relative aspect-square overflow-hidden rounded-lg bg-gray-100">
                     <Image
                       src={feature.imageSrc}
                       alt={feature.imageAlt}
