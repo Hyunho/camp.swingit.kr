@@ -1103,13 +1103,13 @@ export default async function Home() {
       </Container> */}
       {/* <Container className="mt-24 md:mt-28"> */}
       {/* <Container className="mt-9">
-        <hr/>
+        <hr />
         <Instructors />
         <LocalInstructors />
         <hr className="mt-9"/>
 
         <Band />
-        <hr/>
+        <hr />
         <DJs/>
 
       </Container> */}
