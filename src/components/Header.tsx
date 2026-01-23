@@ -330,7 +330,7 @@ export function Header() {
         setProperty('--header-mb', `${-scrollY}px`)
       }
 
-      if (top === 0 && scrollY > 0 && scrollY >= downDelay) {
+      if (scrollY > 0 && scrollY >= downDelay) {
         setProperty('--header-inner-position', 'fixed')
         removeProperty('--header-top')
         removeProperty('--avatar-top')
