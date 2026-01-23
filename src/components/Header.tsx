@@ -191,19 +191,20 @@ function DesktopNavigation(props: React.ComponentPropsWithoutRef<'nav'>) {
     <nav {...props}>
       <ul className="flex rounded-full bg-white/90 px-3 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur">
         <NavItem href="/">Home</NavItem>
-        <NavItem href="https://campswingitkr-git-csi2025-swingit.vercel.app" target="_blank">CSI2025</NavItem>
-        <NavItem href="/photos">Photos</NavItem>
-        <NavItem href="/about">About</NavItem>
+        {/* <NavItem href="/photos">Photos</NavItem> */}
+        {/* <NavItem href="/about">About</NavItem> */}
         {/* <NavItem href="/projects">Projects</NavItem>
         <NavItem href="/speaking">Speaking</NavItem>
         <NavItem href="/uses">Uses</NavItem> */}
         {/* <NavItem href="/">Workshop</NavItem> */}
         {/* <NavItem href="/articles">NOTICE</NavItem>
-        <NavItem href="/csi">CSI</NavItem>
+        <NavItem href="/csi">CSI</NavItem>*/}
         <NavItem href="/klhc">KLHC</NavItem>
+
         <NavItem href="/schedule">SCHEDULE</NavItem>
         <NavItem href="/venues">VENUES</NavItem>
-        <NavItem href="/registration">REGISTRATION</NavItem> */}
+        <NavItem href="/registration">REGISTRATION</NavItem> 
+        <NavItem href="https://campswingitkr-git-csi2025-swingit.vercel.app" target="_blank">PAST EVENTS</NavItem>
       </ul>
     </nav>
   )
