@@ -1114,12 +1114,11 @@ export default async function Home() {
                         The Camp Swing It 2025 photos have been added. Check it
                         out now.
                       </p>
-                      <Link
-                        href="/photos"
+                      <span
                         className="mt-2 block text-blue-500 hover:text-blue-700"
                       >
                         Go to Photos page
-                      </Link>
+                      </span>
                     </div>
                   </div>
                   <div className="pointer-events-none absolute inset-px rounded-lg shadow-sm ring-1 ring-black/5 max-lg:rounded-b-[2rem] lg:rounded-br-[2rem]" />
@@ -1148,12 +1147,11 @@ export default async function Home() {
                         The KLHC 2025 score sheets are now available. Take a
                         look at the competition results.
                       </p>
-                      <Link
-                        href="/score_sheets"
+                      <span
                         className="mt-2 block text-blue-500 hover:text-blue-700"
                       >
                         Go to Score Sheets page
-                      </Link>
+                      </span>
                     </div>
                   </div>
                   <div className="pointer-events-none absolute inset-px rounded-lg shadow-sm ring-1 ring-black/5 max-lg:rounded-b-[2rem] lg:rounded-br-[2rem]" />
