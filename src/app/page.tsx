@@ -13,6 +13,7 @@ import {
   TwitterIcon,
 } from '@/components/SocialIcons'
 import { YoutubeVideo } from '@/components/YoutubeVideo'
+import { AboutPreview } from '@/components/AboutPreview'
 import logoAirbnb from '@/images/logos/airbnb.svg'
 import logoFacebook from '@/images/logos/facebook.svg'
 import image1 from '@/images/photos/main_01.jpg'
@@ -913,6 +914,7 @@ export default async function Home() {
           </div>
         </div>
       </Container>
+      <AboutPreview />
       <Container>
         <div className="mx-auto mb-9 mt-9">
           <div className="flex flex-col gap-12">
@@ -1010,157 +1012,6 @@ export default async function Home() {
           </div>
         </div>
       </Container> */}
-      <Container>
-        <hr />
-        <div className="bg-white py-24 sm:py-12">
-          <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
-            {/* <h2 className="text-base/7 font-semibold text-indigo-600">Deploy faster</h2> */}
-            <p className="text-pretty mt-2 max-w-lg text-4xl font-semibold tracking-tight text-gray-950 sm:text-5xl">
-              There are links to various information.
-            </p>
-            <div className="mt-10 grid grid-cols-1 gap-4 sm:mt-16 lg:grid-rows-2">
-              {/* <div className="mt-10 grid grid-cols-1 gap-4 sm:mt-16 lg:grid-cols-6 lg:grid-rows-2">
-              <div className="relative lg:col-span-3">
-                <div className="absolute inset-px rounded-lg bg-white max-lg:rounded-t-[2rem] lg:rounded-tl-[2rem]" />
-                <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] max-lg:rounded-t-[calc(2rem+1px)] lg:rounded-tl-[calc(2rem+1px)]">
-                  <img
-                    alt=""
-                    src="https://tailwindcss.com/plus-assets/img/component-images/bento-01-performance.png"
-                    className="h-80 object-cover object-left"
-                  />
-                  <div className="p-10 pt-4">
-                    <h3 className="text-sm/4 font-semibold text-indigo-600">Performance</h3>
-                    <p className="mt-2 text-lg font-medium tracking-tight text-gray-950">Lightning-fast builds</p>
-                    <p className="mt-2 max-w-lg text-sm/6 text-gray-600">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. In gravida justo et nulla efficitur, maximus
-                      egestas sem pellentesque.
-                    </p>
-                  </div>
-                </div>
-                <div className="pointer-events-none absolute inset-px rounded-lg ring-1 shadow-sm ring-black/5 max-lg:rounded-t-[2rem] lg:rounded-tl-[2rem]" />
-              </div>
-              <div className="relative lg:col-span-3">
-                <div className="absolute inset-px rounded-lg bg-white lg:rounded-tr-[2rem]" />
-                <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] lg:rounded-tr-[calc(2rem+1px)]">
-                  <img
-                    alt=""
-                    src="https://tailwindcss.com/plus-assets/img/component-images/bento-01-releases.png"
-                    className="h-80 object-cover object-left lg:object-right"
-                  />
-                  <div className="p-10 pt-4">
-                    <h3 className="text-sm/4 font-semibold text-indigo-600">Releases</h3>
-                    <p className="mt-2 text-lg font-medium tracking-tight text-gray-950">Push to deploy</p>
-                    <p className="mt-2 max-w-lg text-sm/6 text-gray-600">
-                      Curabitur auctor, ex quis auctor venenatis, eros arcu rhoncus massa, laoreet dapibus ex elit vitae
-                      odio.
-                    </p>
-                  </div>
-                </div>
-                <div className="pointer-events-none absolute inset-px rounded-lg ring-1 shadow-sm ring-black/5 lg:rounded-tr-[2rem]" />
-              </div>
-              <div className="relative lg:col-span-2">
-                <div className="absolute inset-px rounded-lg bg-white lg:rounded-bl-[2rem]" />
-                <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] lg:rounded-bl-[calc(2rem+1px)]">
-                  <img
-                    alt=""
-                    src="https://tailwindcss.com/plus-assets/img/component-images/bento-01-speed.png"
-                    className="h-80 object-cover object-left"
-                  />
-                  <div className="p-10 pt-4">
-                    <h3 className="text-sm/4 font-semibold text-indigo-600">Speed</h3>
-                    <p className="mt-2 text-lg font-medium tracking-tight text-gray-950">Built for power users</p>
-                    <p className="mt-2 max-w-lg text-sm/6 text-gray-600">
-                      Sed congue eros non finibus molestie. Vestibulum euismod augue.
-                    </p>
-                  </div>
-                </div>
-                <div className="pointer-events-none absolute inset-px rounded-lg ring-1 shadow-sm ring-black/5 lg:rounded-bl-[2rem]" />
-              </div>
-              <div className="relative lg:col-span-2">
-                <div className="absolute inset-px rounded-lg bg-white" />
-                <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)]">
-                  <img
-                    alt=""
-                    src="https://tailwindcss.com/plus-assets/img/component-images/bento-01-integrations.png"
-                    className="h-80 object-cover"
-                  />
-                  <div className="p-10 pt-4">
-                    <h3 className="text-sm/4 font-semibold text-indigo-600">Integrations</h3>
-                    <p className="mt-2 text-lg font-medium tracking-tight text-gray-950">Connect your favorite tools</p>
-                    <p className="mt-2 max-w-lg text-sm/6 text-gray-600">
-                      Maecenas at augue sed elit dictum vulputate, in nisi aliquam maximus arcu.
-                    </p>
-                  </div>
-                </div>
-                <div className="pointer-events-none absolute inset-px rounded-lg ring-1 shadow-sm ring-black/5" />
-              </div> */}
-              <Link href="/albums" className="mt-2 block hover:text-blue-700">
-                <div className="relative lg:col-span-2">
-                  <div className="absolute inset-px rounded-lg bg-white max-lg:rounded-b-[2rem] lg:rounded-br-[2rem]" />
-                  <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] max-lg:rounded-b-[calc(2rem+1px)] lg:rounded-br-[calc(2rem+1px)]">
-                    {/* <img
-                    alt=""
-                    src="https://tailwindcss.com/plus-assets/img/component-images/bento-01-network.png"
-                    className="h-80 object-cover"
-                  /> */}
-                    <div className="p-10 pt-4">
-                      <h3 className="text-xl font-semibold text-indigo-600">
-                        Photos
-                      </h3>
-                      <p className="mt-2 text-lg font-medium tracking-tight text-gray-950">
-                        Check out the photos
-                      </p>
-                      <p className="mt-2 max-w-lg text-sm/6 text-gray-600">
-                        The Camp Swing It 2025 photos have been added. Check it
-                        out now.
-                      </p>
-                      <span
-                        className="mt-2 block text-blue-500 hover:text-blue-700"
-                      >
-                        Go to Photos page
-                      </span>
-                    </div>
-                  </div>
-                  <div className="pointer-events-none absolute inset-px rounded-lg shadow-sm ring-1 ring-black/5 max-lg:rounded-b-[2rem] lg:rounded-br-[2rem]" />
-                </div>
-              </Link>
-              <Link
-                href="/score_sheets"
-                className="mt-2 block hover:text-blue-700"
-              >
-                <div className="relative lg:col-span-2">
-                  <div className="absolute inset-px rounded-lg bg-white max-lg:rounded-b-[2rem] lg:rounded-br-[2rem]" />
-                  <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] max-lg:rounded-b-[calc(2rem+1px)] lg:rounded-br-[calc(2rem+1px)]">
-                    {/* <img
-                    alt=""
-                    src="https://tailwindcss.com/plus-assets/img/component-images/bento-01-network.png"
-                    className="h-80 object-cover"
-                  /> */}
-                    <div className="p-10 pt-4">
-                      <h3 className="text-xl font-semibold text-indigo-600">
-                        Score Sheets
-                      </h3>
-                      <p className="mt-2 text-lg font-medium tracking-tight text-gray-950">
-                        Check the Results
-                      </p>
-                      <p className="mt-2 max-w-lg text-sm/6 text-gray-600">
-                        The KLHC 2025 score sheets are now available. Take a
-                        look at the competition results.
-                      </p>
-                      <span
-                        className="mt-2 block text-blue-500 hover:text-blue-700"
-                      >
-                        Go to Score Sheets page
-                      </span>
-                    </div>
-                  </div>
-                  <div className="pointer-events-none absolute inset-px rounded-lg shadow-sm ring-1 ring-black/5 max-lg:rounded-b-[2rem] lg:rounded-br-[2rem]" />
-                </div>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </Container>
     </>
   )
 }
