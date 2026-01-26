@@ -75,15 +75,15 @@ function Article({
       <Card.Eyebrow
         as="time"
         dateTime={article.date}
-        className="!mb-1"
+        className="!mb-1 hidden md:flex"
         decorate
       >
         {formatDate(article.date)}
       </Card.Eyebrow>
-      <Card.Description className="line-clamp-2 !mt-1">
+      <Card.Description className="line-clamp-2 !mt-1 hidden md:block">
         {article.description}
       </Card.Description>
-      <Card.Cta className="!mt-2">Read article</Card.Cta>
+      <Card.Cta className="!mt-2 hidden md:flex">Read article</Card.Cta>
     </Card>
   )
 }
@@ -934,7 +934,7 @@ export default async function Home() {
               <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
                 {/* Korean Column */}
                 <div className="flex flex-col gap-6 h-full">
-                  <h3 className="text-xl font-bold text-gray-900">한국어</h3>
+                  <h3 className="text-sm font-medium text-zinc-400">한국어</h3>
                   {articles
                     .filter((article) => article.slug.endsWith('-kr'))
                     .slice(0, 1)
@@ -955,7 +955,7 @@ export default async function Home() {
 
                 {/* English Column */}
                 <div className="flex flex-col gap-6 h-full">
-                  <h3 className="text-xl font-bold text-gray-900">English</h3>
+                  <h3 className="text-sm font-medium text-zinc-400">English</h3>
                   {articles
                     .filter((article) => article.slug.endsWith('-en'))
                     .slice(0, 1)
@@ -976,7 +976,7 @@ export default async function Home() {
 
                 {/* Chinese Column */}
                 <div className="flex flex-col gap-6 h-full">
-                  <h3 className="text-xl font-bold text-gray-900">中文</h3>
+                  <h3 className="text-sm font-medium text-zinc-400">中文</h3>
                   {articles
                     .filter((article) => article.slug.endsWith('-cn'))
                     .slice(0, 1)
