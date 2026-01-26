@@ -59,7 +59,7 @@ function Article({
       className={clsx(
         className,
         highlight &&
-          'rounded-2xl border border-amber-200 bg-amber-50/60 p-6 shadow-lg shadow-amber-100/60 dark:border-amber-400/30 dark:bg-amber-500/10 dark:shadow-amber-500/10',
+          'rounded-2xl border border-amber-200 bg-amber-50/60 p-4 shadow-lg shadow-amber-100/60 dark:border-amber-400/30 dark:bg-amber-500/10 dark:shadow-amber-500/10',
       )}
     >
       <Card.Title href={`/articles/${article.slug}`}>
@@ -72,11 +72,18 @@ function Article({
           ) : null}
         </span>
       </Card.Title>
-      <Card.Eyebrow as="time" dateTime={article.date} decorate>
+      <Card.Eyebrow
+        as="time"
+        dateTime={article.date}
+        className="!mb-1"
+        decorate
+      >
         {formatDate(article.date)}
       </Card.Eyebrow>
-      <Card.Description>{article.description}</Card.Description>
-      <Card.Cta>Read article</Card.Cta>
+      <Card.Description className="line-clamp-2 !mt-1">
+        {article.description}
+      </Card.Description>
+      <Card.Cta className="!mt-2">Read article</Card.Cta>
     </Card>
   )
 }
@@ -914,7 +921,7 @@ export default async function Home() {
           </div>
         </div>
       </Container>
-      <AboutPreview />
+
       <Container>
         <div className="mx-auto mb-9 mt-9">
           <div className="flex flex-col gap-12">
@@ -953,8 +960,12 @@ export default async function Home() {
                     <Article
                       key={article.slug}
                       article={article}
-                      badgeLabel={undefined}
-                      highlight={false}
+                      badgeLabel={
+                        article.slug === 'csi2026-01-13-notice-en'
+                          ? 'New'
+                          : undefined
+                      }
+                      highlight={article.slug === 'csi2026-01-13-notice-en'}
                       className="h-full"
                     />
                   ))}
@@ -970,8 +981,12 @@ export default async function Home() {
                     <Article
                       key={article.slug}
                       article={article}
-                      badgeLabel={undefined}
-                      highlight={false}
+                      badgeLabel={
+                        article.slug === 'csi2026-01-13-notice-cn'
+                          ? 'New'
+                          : undefined
+                      }
+                      highlight={article.slug === 'csi2026-01-13-notice-cn'}
                       className="h-full"
                     />
                   ))}
@@ -981,6 +996,7 @@ export default async function Home() {
         </div>
       </Container>
       <Photos />
+      <AboutPreview />
       {/* <Container className="mt-9">
         <About/>
       </Container> */}
