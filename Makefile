@@ -1,0 +1,3 @@
+
+all:
+	pnpm dev
