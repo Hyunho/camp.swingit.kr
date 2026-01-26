@@ -921,6 +921,8 @@ export default async function Home() {
           </div>
         </div>
       </Container>
+      <Photos />
+      <AboutPreview />
 
       <div className="bg-gray-50 py-24 sm:py-32">
         <Container>
@@ -997,8 +999,6 @@ export default async function Home() {
           </div>
         </Container>
       </div>
-      <Photos />
-      <AboutPreview />
       {/* <Container className="mt-9">
         <About/>
       </Container> */}

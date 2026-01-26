@@ -17,7 +17,7 @@ export function AboutPreview() {
         </div>
         <div className="mx-auto mt-6 max-w-2xl lg:max-w-none">
           <div className="space-y-6 text-lg leading-8 text-gray-600">
-             <p className={clsx(!isExpanded && 'line-clamp-1')}>
+             <p>
               C.S.I. is an abbreviation for “Camp Swing It”, a Swing Camp started in
               2009, and is a Swing Dance Camp that truly represents not only the
               Korean Swing Dance Scene, but also the whole Asia. It is an all-round
@@ -36,7 +36,7 @@ export function AboutPreview() {
                 </p>
                </>
              )}
-            <p className={clsx(!isExpanded && 'line-clamp-1')}>
+            <p>
               (C.S.I. 는 “Camp Swing It”의 약자로서 2009년부터 시작된 스윙캠프로서
               대한민국 스윙댄스씬 뿐만이 아니라 아시아를 대표하는
               스윙댄스캠프입니다. 그리고 린디합을 중심으로 발보아, 부기우기, 블루스,
