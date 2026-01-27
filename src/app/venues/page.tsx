@@ -30,10 +30,9 @@ export default function VenuesPage() {
                                             <path d="M10 11.5a2.5 2.5 0 100-5 2.5 2.5 0 000 5z" />
                                         </svg>
                                     </dt>
-                                    <dd>
-                                        서울특별시 마포구 노고산동 56-6
-                                        <br />
-                                        56-6 Nogosan-dong, Mapo-gu, Seoul
+                                    <dd className="flex flex-col">
+                                        <span className="block text-gray-900">56-6 Nogosan-dong, Mapo-gu, Seoul</span>
+                                        <span className="block text-sm text-gray-500">서울특별시 마포구 노고산동 56-6</span>
                                     </dd>
                                 </div>
                             </dl>
