@@ -1,5 +1,6 @@
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
+import Image from 'next/image'
 
 export default function VenuesPage() {
     return (
@@ -53,16 +54,20 @@ export default function VenuesPage() {
                     {/* Images */}
                     <div className="order-1 lg:order-2 space-y-6">
                         <div className="relative overflow-hidden rounded-2xl shadow-xl bg-gray-100">
-                            <img
+                            <Image
                                 src="/images/2026/venues/Kyungsung-Hall.png"
                                 alt="Kyungsung Hall"
+                                width={1192}
+                                height={665}
                                 className="w-full h-auto object-cover"
                             />
                         </div>
                         <div className="relative overflow-hidden rounded-2xl shadow-xl bg-gray-100">
-                            <img
+                            <Image
                                 src="/images/2026/venues/Kyungsung-Hall-map.png"
                                 alt="Kyungsung Hall Map"
+                                width={278}
+                                height={319}
                                 className="w-full h-auto object-cover"
                             />
                         </div>
