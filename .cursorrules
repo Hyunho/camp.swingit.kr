@@ -1,0 +1,41 @@
+# 프로젝트 규칙 (Project Rules)
+
+## 기술 스택 (Tech Stack)
+- **Framework**: Next.js (App Router)
+- **Styling**: Tailwind CSS, Headless UI
+- **Language**: TypeScript
+- **Package Manager**: npm
+
+## 파일 명명 (File Naming)
+- **Components**: PascalCase (예: `Button.tsx`)
+- **Pages**: `page.tsx`
+- **Layouts**: `layout.tsx`
+- **Utilities**: camelCase (예: `formatDate.ts`)
+- **Types**: 구현체와 동일한 이름 사용 (`.ts` 확장자)
+
+## 코드 스타일 (Code Style)
+- **Strict Mode**: 활성화 (Enabled)
+- **Imports 순서**:
+  1. React/Next.js (`react`, `next/image`)
+  2. Third-party (`clsx`, `@headlessui/react`)
+  3. Internal (`@/components/...`)
+- **Functional Components**: `export function ComponentName` 사용
+- **Interfaces**: Props 정의 시 `interface` 사용
+
+## Tailwind CSS
+- 조건부 클래스 사용 시 `clsx` 사용
+- 다크 모드 지원 (`dark:` prefix)
+- 모바일 우선 브레이크포인트 사용 (`sm:`, `md:`, `lg:`)
+
+## 이미지 (Images)
+- 항상 `next/image` 컴포넌트 사용
+- `alt` 텍스트 필수 설정
+
+## 국제화 (Internationalization)
+- 한국어(KR), 영어(EN), 중국어(CN) 콘텐츠 지원
+- 다국어 콘텐츠 시각적 분리 또는 표준 패턴 사용
+
+## 일반 사항 (General)
+- `any` 타입 사용 금지
+- 의미론적 HTML 태그 사용
+- **모든 계획(Plan)과 설명은 한글로 작성합니다.**
