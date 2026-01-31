@@ -16,11 +16,7 @@ import { YoutubeVideo } from '@/components/YoutubeVideo'
 import { AboutPreview } from '@/components/AboutPreview'
 import logoAirbnb from '@/images/logos/airbnb.svg'
 import logoFacebook from '@/images/logos/facebook.svg'
-import image1 from '@/images/photos/main_01.jpg'
-import image2 from '@/images/photos/main_02.jpg'
-import image3 from '@/images/photos/main_03.jpg'
-import image4 from '@/images/photos/main_04.jpg'
-import image5 from '@/images/photos/main_05.jpg'
+
 import { type ArticleWithSlug, getAllArticles } from '@/lib/articles'
 import { formatDate } from '@/lib/formatDate'
 import { CheckCircleIcon } from '@heroicons/react/20/solid'
@@ -59,7 +55,7 @@ function Article({
       className={clsx(
         className,
         highlight &&
-          'rounded-2xl border border-amber-200 bg-amber-50/60 p-4 shadow-lg shadow-amber-100/60 dark:border-amber-400/30 dark:bg-amber-500/10 dark:shadow-amber-500/10',
+        'rounded-2xl border border-amber-200 bg-amber-50/60 p-4 shadow-lg shadow-amber-100/60 dark:border-amber-400/30 dark:bg-amber-500/10 dark:shadow-amber-500/10',
       )}
     >
       <Card.Title href={`/articles/${article.slug}`}>
@@ -835,12 +831,18 @@ function Photos() {
 
   return (
     <div className="bg-sky-50">
-      <div className="-my-4 flex justify-center gap-5 overflow-hidden py-10 sm:gap-8 sm:py-10">
-        {[image1, image2, image3, image4, image5].map((image, imageIndex) => (
+      <div className="-my-4 flex justify-center gap-3 overflow-hidden py-10 sm:gap-5 sm:py-10">
+        {[
+          '/images/2026/main/BUK_6293.jpg',
+          '/images/2026/main/BUK_9087.jpg',
+          '/images/2026/main/Z62_1311.jpg',
+          '/images/2026/main/Z62_1435.jpg',
+          '/images/2026/main/Z62_4630.jpg',
+        ].map((image, imageIndex) => (
           <div
-            key={image.src}
+            key={image}
             className={clsx(
-              'relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 sm:w-72 sm:rounded-2xl',
+              'relative aspect-[9/10] w-36 flex-none overflow-hidden rounded-xl bg-zinc-100 sm:w-60 sm:rounded-2xl',
               rotations[imageIndex % rotations.length],
             )}
           >
@@ -848,7 +850,11 @@ function Photos() {
               src={image}
               alt=""
               sizes="(min-width: 640px) 18rem, 11rem"
-              className="absolute inset-0 h-full w-full object-cover"
+              fill
+              className={clsx(
+                'absolute inset-0 h-full w-full object-cover',
+                imageIndex === 1 && 'brightness-[0.9]',
+              )}
             />
           </div>
         ))}
@@ -867,11 +873,11 @@ export default async function Home() {
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl">
             {/* Software designer, founder, and amateur astronaut. */}
             CSI & KLHC 2026
-          </h1> 
+          </h1>
           <p className="mt-1 text-base font-semibold text-zinc-600">
             Camp Swing It & Korean Lindy Hop Championships
           </p>
-          
+
           <p className="mt-6 text-base text-zinc-600 ">
             {/* Camp Swing It description<br/> */}
             3-5 APR 2026
