@@ -937,9 +937,9 @@ export default async function Home() {
               <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
                 NOTICE
               </h2>
-              <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
-                {/* Korean Column */}
-                <div className="flex flex-col gap-6 h-full">
+              <div className="flex flex-col gap-6">
+                {/* Korean */}
+                <div className="flex flex-col gap-2">
                   <h3 className="text-sm font-medium text-zinc-400">한국어</h3>
                   {articles
                     .filter((article) => article.slug.endsWith('-kr'))
@@ -954,13 +954,12 @@ export default async function Home() {
                             : undefined
                         }
                         highlight={article.slug === 'csi2026-01-13-notice-kr'}
-                        className="h-full"
                       />
                     ))}
                 </div>
 
-                {/* English Column */}
-                <div className="flex flex-col gap-6 h-full">
+                {/* English */}
+                <div className="flex flex-col gap-2">
                   <h3 className="text-sm font-medium text-zinc-400">English</h3>
                   {articles
                     .filter((article) => article.slug.endsWith('-en'))
@@ -975,13 +974,12 @@ export default async function Home() {
                             : undefined
                         }
                         highlight={article.slug === 'csi2026-01-13-notice-en'}
-                        className="h-full"
                       />
                     ))}
                 </div>
 
-                {/* Chinese Column */}
-                <div className="flex flex-col gap-6 h-full">
+                {/* Chinese */}
+                <div className="flex flex-col gap-2">
                   <h3 className="text-sm font-medium text-zinc-400">中文</h3>
                   {articles
                     .filter((article) => article.slug.endsWith('-cn'))
@@ -996,7 +994,6 @@ export default async function Home() {
                             : undefined
                         }
                         highlight={article.slug === 'csi2026-01-13-notice-cn'}
-                        className="h-full"
                       />
                     ))}
                 </div>
