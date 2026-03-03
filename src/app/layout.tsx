@@ -7,9 +7,9 @@ import '@/styles/tailwind.css'
 
 export const metadata: Metadata = {
   title: {
-    template: '%s - Swingit',
+    template: '%s - KLHC 2026',
     default:
-      'Camp Swing It - Swing It',
+      'KLHC 2026 (a.k.a. Camp Swing It) - Swing It',
   },
   description:
     'Camp Swing It is a swing dance camp in South Korea. It is a weekend full of dancing, learning, and parties.',

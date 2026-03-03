@@ -26,7 +26,7 @@ export function AboutPreview() {
                   This event is created by everyone from dancers who have just started dancing to professional dancers who have distinguished themselves at various events.3 nights and 4 days of workshops by famous dancers, parties with live bands, and K.L.H.C. (Korean Lindy Hop Championships), the best Lindy Hop competition in the country. It can be said to be a “Festival Of Dancers.”
                 </p>
                 <p>
-                  For 2026, we have decided to hold an all-round dance event at Gyungsung Hall that inherits the legacy of CSI while taking a brief hiatus from our usual format. In consideration of the absence of lodging facilities, the event will officially be titled &apos;KLHC 2026.&apos; We appreciate your understanding and invite all swing dancers to join us with enthusiasm.
+                  For 2026, we have decided to hold an all-round dance event at Kyungsung Hall that inherits the legacy of CSI while taking a brief hiatus from our usual format. In consideration of the absence of lodging facilities, the event will officially be titled &apos;KLHC 2026.&apos; We appreciate your understanding and invite all swing dancers to join us with enthusiasm.
                 </p>
               </>
             )}

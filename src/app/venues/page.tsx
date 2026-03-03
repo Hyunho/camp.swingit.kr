@@ -64,7 +64,7 @@ export default function VenuesPage() {
                         </div>
                         <div className="relative overflow-hidden rounded-2xl shadow-xl bg-gray-100">
                             <Image
-                                src="/images/2026/venues/Kyungsung-Hall-map.png"
+                                src="/images/2026/venues/Kyungsung-Hall-Map.png"
                                 alt="Kyungsung Hall Map"
                                 width={278}
                                 height={319}

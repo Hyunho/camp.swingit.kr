@@ -872,17 +872,17 @@ export default async function Home() {
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl">
             {/* Software designer, founder, and amateur astronaut. */}
-            CSI & KLHC 2026
+            KLHC 2026 (a.k.a. Camp Swing It)
           </h1>
           <p className="mt-1 text-base font-semibold text-zinc-600">
-            Camp Swing It & Korean Lindy Hop Championships
+            Korean Lindy Hop Championships & Camp Swing It
           </p>
 
           <p className="mt-6 text-base text-zinc-600 ">
             {/* Camp Swing It description<br/> */}
             3-5 APR 2026
             <br />
-            Gyeongseong Hall, Seoul, Korea
+            Kyungsung Hall, Seoul, Korea
             (경성홀, 서울)
           </p>
           {/* <p className="mt-6 text-base text-blue-600 ">
