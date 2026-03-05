@@ -23,7 +23,6 @@ import { LocalInstructors } from '@/components/LocalInstructors'
 import { Staffs } from '@/components/Staffs'
 import { Instructors } from '@/components/Instructors'
 import { Band } from '@/components/Band'
-import { DJs } from '@/components/DJs'
 
 function ArrowDownIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
@@ -41,11 +40,13 @@ function ArrowDownIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
 function Article({
   article,
   badgeLabel,
+  langLabel,
   highlight = false,
   className,
 }: {
   article: ArticleWithSlug
   badgeLabel?: string
+  langLabel?: string
   highlight?: boolean
   className?: string
 }) {
@@ -58,6 +59,11 @@ function Article({
         'rounded-2xl border border-amber-200 bg-amber-50/60 p-4 shadow-lg shadow-amber-100/60 dark:border-amber-400/30 dark:bg-amber-500/10 dark:shadow-amber-500/10',
       )}
     >
+      {langLabel && (
+        <p className="relative z-10 mb-1 text-xs font-medium text-zinc-400">
+          {langLabel}
+        </p>
+      )}
       <Card.Title href={`/articles/${article.slug}`}>
         <span className="inline-flex items-center gap-2">
           <span>{article.title}</span>
@@ -399,73 +405,67 @@ export default async function Home() {
       <Photos />
       <AboutPreview />
 
-      <div className="bg-gray-50 py-24 sm:py-32">
+      <div className="bg-gray-50 py-12 sm:py-16">
         <Container>
           <div className="mx-auto">
-            <div className="flex flex-col gap-12">
+            <div className="flex flex-col gap-6">
               <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
                 NOTICE
               </h2>
-              <div className="flex flex-col gap-6">
+              <div className="flex flex-col gap-4">
                 {/* Korean */}
-                <div className="flex flex-col gap-2">
-                  <h3 className="text-sm font-medium text-zinc-400">한국어</h3>
-                  {articles
-                    .filter((article) => article.slug.endsWith('-kr'))
-                    .slice(0, 1)
-                    .map((article) => (
-                      <Article
-                        key={article.slug}
-                        article={article}
-                        badgeLabel={
-                          article.slug === 'csi2026-01-13-notice-kr'
-                            ? 'New'
-                            : undefined
-                        }
-                        highlight={article.slug === 'csi2026-01-13-notice-kr'}
-                      />
-                    ))}
-                </div>
+                {articles
+                  .filter((article) => article.slug.endsWith('-kr'))
+                  .slice(0, 1)
+                  .map((article) => (
+                    <Article
+                      key={article.slug}
+                      article={article}
+                      langLabel="한국어"
+                      badgeLabel={
+                        article.slug === 'csi2026-01-13-notice-kr'
+                          ? 'New'
+                          : undefined
+                      }
+                      highlight={article.slug === 'csi2026-01-13-notice-kr'}
+                    />
+                  ))}
 
                 {/* English */}
-                <div className="flex flex-col gap-2">
-                  <h3 className="text-sm font-medium text-zinc-400">English</h3>
-                  {articles
-                    .filter((article) => article.slug.endsWith('-en'))
-                    .slice(0, 1)
-                    .map((article) => (
-                      <Article
-                        key={article.slug}
-                        article={article}
-                        badgeLabel={
-                          article.slug === 'csi2026-01-13-notice-en'
-                            ? 'New'
-                            : undefined
-                        }
-                        highlight={article.slug === 'csi2026-01-13-notice-en'}
-                      />
-                    ))}
-                </div>
+                {articles
+                  .filter((article) => article.slug.endsWith('-en'))
+                  .slice(0, 1)
+                  .map((article) => (
+                    <Article
+                      key={article.slug}
+                      article={article}
+                      langLabel="English"
+                      badgeLabel={
+                        article.slug === 'csi2026-01-13-notice-en'
+                          ? 'New'
+                          : undefined
+                      }
+                      highlight={article.slug === 'csi2026-01-13-notice-en'}
+                    />
+                  ))}
 
                 {/* Chinese */}
-                <div className="flex flex-col gap-2">
-                  <h3 className="text-sm font-medium text-zinc-400">中文</h3>
-                  {articles
-                    .filter((article) => article.slug.endsWith('-cn'))
-                    .slice(0, 1)
-                    .map((article) => (
-                      <Article
-                        key={article.slug}
-                        article={article}
-                        badgeLabel={
-                          article.slug === 'csi2026-01-13-notice-cn'
-                            ? 'New'
-                            : undefined
-                        }
-                        highlight={article.slug === 'csi2026-01-13-notice-cn'}
-                      />
-                    ))}
-                </div>
+                {articles
+                  .filter((article) => article.slug.endsWith('-cn'))
+                  .slice(0, 1)
+                  .map((article) => (
+                    <Article
+                      key={article.slug}
+                      article={article}
+                      langLabel="中文"
+                      badgeLabel={
+                        article.slug === 'csi2026-01-13-notice-cn'
+                          ? 'New'
+                          : undefined
+                      }
+                      highlight={article.slug === 'csi2026-01-13-notice-cn'}
+                    />
+                  ))}
               </div>
             </div>
           </div>
@@ -479,8 +479,6 @@ export default async function Home() {
         <Instructors />
         <hr className="mt-9" />
         <Band />
-        <hr className="mt-9" />
-        <DJs />
         <hr className="mt-9" />
         <Staffs />
       </Container>
