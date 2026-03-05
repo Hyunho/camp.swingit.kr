@@ -77,7 +77,7 @@ export function Staffs() {
               <h3 className="mb-4 text-sm font-semibold tracking-wide text-indigo-600 dark:text-indigo-300">
                 {group}
               </h3>
-              <div className="grid grid-cols-3 gap-4 sm:grid-cols-4 lg:grid-cols-6">
+              <div className="grid grid-cols-3 gap-4 sm:grid-cols-4 lg:grid-cols-5">
                 {members.map((staff) =>
                   staff.name === 'TO BE ADDED' ? (
                     <div

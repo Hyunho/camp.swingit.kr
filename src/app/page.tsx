@@ -344,8 +344,8 @@ export default async function Home() {
   return (
     <>
       <Container className="mt-9">
-        <div className="max-w-2xl">
-          <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl">
+        <div className="max-w-3xl">
+          <h1 className="text-3xl font-bold tracking-tight text-zinc-800 sm:text-4xl lg:text-5xl">
             {/* Software designer, founder, and amateur astronaut. */}
             KLHC 2026 (a.k.a. Camp Swing It)
           </h1>

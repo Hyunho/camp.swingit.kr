@@ -201,7 +201,7 @@ function DesktopNavigation(props: React.ComponentPropsWithoutRef<'nav'>) {
         <NavItem href="/csi">CSI</NavItem>*/}
         <NavItem href="/klhc">KLHC</NavItem>
 
-        <NavItem href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRqDxARIJ1VqOIhWNVw72sckUs4c7O2GQjZNr5JXSS0tNNinj_FdjeyeodmjP7SrgbnclaMygtGohAE/pubhtml?gid=0&single=true" target="_blank">SCHEDULE</NavItem>
+        <NavItem href="/schedule">SCHEDULE</NavItem>
         <NavItem href="/venues">VENUES</NavItem>
         <NavItem href="/registration">REGISTRATION</NavItem>
         <NavItem href="https://campswingitkr-git-csi2025-swingit.vercel.app" target="_blank">PAST EVENTS</NavItem>
