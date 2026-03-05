@@ -1,3 +1,3 @@
 
 all:
-	pnpm dev
+	npm run dev
