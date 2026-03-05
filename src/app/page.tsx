@@ -104,46 +104,6 @@ function SocialLink({
 }
 
 
-function About() {
-  return (
-    <div className="bg-white py-8 md:py-12">
-      <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-        ABOUT
-      </h2>
-      <div>
-        <p className="mt-6 text-lg leading-8 text-gray-600">
-          C.S.I. is an abbreviation for “Camp Swing It”, a Swing Camp started in
-          2009, and is a Swing Dance Camp that truly represents not only the
-          Korean Swing Dance Scene, but also the whole Asia. It is an all-round
-          Dance Event that covers a wide range of swing dances; including
-          Balboa, Boogie-Woogie, Blues, and Tap, with a focus on Lindy Hop.
-        </p>
-        <p className="mt-6 text-lg leading-8 text-gray-600">
-          This event is created by everyone from dancers who have just started
-          dancing to professional dancers who have distinguished themselves at
-          various events.3 nights and 4 days of workshops by famous dancers,
-          parties with live bands, and K.L.H.C. (Korean Lindy Hop
-          Championships), the best Lindy Hop competition in the country. It can
-          be said to be a “Festival Of Dancers.”
-        </p>
-        <p className="mt-6 text-lg leading-8 text-gray-600">
-          (C.S.I. 는 “Camp Swing It”의 약자로서 2009년부터 시작된 스윙캠프로서
-          대한민국 스윙댄스씬 뿐만이 아니라 아시아를 대표하는
-          스윙댄스캠프입니다. 그리고 린디합을 중심으로 발보아, 부기우기, 블루스,
-          탭 등 스윙댄스를 폭넓게 다루는 올라운드 댄스 행사를 추구합니다.
-        </p>
-        <p className="mt-6 text-lg leading-8 text-gray-600">
-          이제 막 춤을 시작한 댄서에서 부터 여러 행사에서 두각을 나타내고 있는
-          프로댄서들까지 하나가 되어 만들어가는 이 행사는, 3박4일간 국내외
-          챔피언들의 워크샵과 라이브 밴드와 함께하는 파티, 그리고 국내 최고의
-          린디합 대회인 K.L.H.C.(Korean Lindy Hop Championships)가 함께하는
-          진정한 “댄서들의 축제” 입니다.)
-        </p>
-      </div>
-    </div>
-  )
-}
-
 
 const tiers = [
   {
@@ -345,20 +305,20 @@ export default async function Home() {
     <>
       <Container className="mt-9">
         <div className="max-w-3xl">
-          <h1 className="text-3xl font-bold tracking-tight text-zinc-800 sm:text-4xl lg:text-5xl">
-            {/* Software designer, founder, and amateur astronaut. */}
-            KLHC 2026 (a.k.a. Camp Swing It)
+          <h1 className="text-4xl font-extrabold tracking-tight text-zinc-900 sm:text-5xl lg:text-6xl">
+            KLHC 2026<br />
+            <span className="mt-2 inline-block text-2xl font-bold text-zinc-500 sm:text-3xl lg:text-4xl">
+              a.k.a. Camp Swing It
+            </span>
           </h1>
-          <p className="mt-1 text-base font-semibold text-zinc-600">
+          <p className="mt-4 text-lg font-semibold text-amber-600">
             Korean Lindy Hop Championships & Camp Swing It
           </p>
 
-          <p className="mt-6 text-base text-zinc-600 ">
-            {/* Camp Swing It description<br/> */}
+          <p className="mt-8 text-lg font-medium leading-relaxed text-zinc-600">
             3-5 APR 2026
             <br />
-            Kyungsung Hall, Seoul, Korea
-            (경성홀, 서울)
+            Kyungsung Hall, Seoul, Korea (경성홀, 서울)
           </p>
           {/* <p className="mt-6 text-base text-blue-600 ">
             CSI 2025 1st Ticket registration will be open from 18 DEC to 15 JAN 2025.<br/>
@@ -366,14 +326,16 @@ export default async function Home() {
           <p className="mt-2 text-base text-blue-600 ">
             (CSI 2025 1차 티켓 판매가 12월 18일 ~  2025년 1월 15일에 열립니다.)
           </p> */}
-          <p className="mt-6 text-base font-bold text-zinc-600">
-            아시아를 넘어 전 세계 스윙댄서들이 함께하는 스윙댄서의 명절!
-            <br />
-            The Ultimate Holiday for Swing Dancers in Asia and Beyond!
-            <br />
-            跨越亚洲，汇聚世界各地摇摆舞者的盛大节日！
-          </p>
-          <p className="mt-6 text-base font-bold text-zinc-600">Coming Soon!</p>
+          <div className="mt-8 space-y-2 text-lg font-medium text-zinc-700">
+            <p>아시아를 넘어 전 세계 스윙댄서들이 함께하는 스윙댄서의 명절!</p>
+            <p>The Ultimate Holiday for Swing Dancers in Asia and Beyond!</p>
+            <p>跨越亚洲，汇聚世界各地摇摆舞者的盛大节日！</p>
+          </div>
+          <div className="mt-10">
+            <span className="inline-flex items-center rounded-full bg-gradient-to-r from-amber-400 to-orange-500 px-6 py-2 text-lg font-bold text-white shadow-md">
+              Coming Soon!
+            </span>
+          </div>
 
           <div className="mt-6 flex items-center gap-6">
             <SocialLink
@@ -471,17 +433,17 @@ export default async function Home() {
           </div>
         </Container>
       </div>
-      <Container className="mt-9">
-        <About />
-      </Container>
-      <Container className="mt-9">
-        <hr className="mt-9" />
-        <Instructors />
-        <hr className="mt-9" />
-        <Band />
-        <hr className="mt-9" />
-        <Staffs />
-      </Container>
+      <div className="flex flex-col gap-y-16 py-16">
+        <Container>
+          <Instructors />
+        </Container>
+        <Container>
+          <Band />
+        </Container>
+        <Container>
+          <Staffs />
+        </Container>
+      </div>
       {/* <Container className="mt-24 md:mt-28">
         <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
           <div className="flex flex-col gap-16">
