@@ -135,15 +135,12 @@ function MobileNavigation(
             </div>
             <nav className="mt-6">
               <ul className="-my-2 divide-y divide-zinc-100 text-base text-zinc-800 dark:divide-zinc-100/5 dark:text-zinc-300">
-                <MobileNavItem href="/">Home</MobileNavItem>
-                <MobileNavItem href="/photos">Photos</MobileNavItem>
-                <MobileNavItem href="/about">About</MobileNavItem>
-                {/* <MobileNavItem href="/articles">NOTICE</MobileNavItem>
-                <MobileNavItem href="/csi">CSI</MobileNavItem>
+                <MobileNavItem href="/">HOME</MobileNavItem>
                 <MobileNavItem href="/klhc">KLHC</MobileNavItem>
                 <MobileNavItem href="/schedule">SCHEDULE</MobileNavItem>
                 <MobileNavItem href="/venues">VENUES</MobileNavItem>
-                <MobileNavItem href="/registration">REGISTRATION</MobileNavItem> */}
+                <MobileNavItem href="https://www.festivall.my/ko/events/buy-tickets/KLHC-2026" target="_blank">REGISTRATION</MobileNavItem>
+                <MobileNavItem href="/photos">PHOTOS</MobileNavItem>
               </ul>
             </nav>
           </Popover.Panel>
