@@ -334,7 +334,8 @@ export default async function Home() {
           </div>
           <div className="mt-10 flex gap-4">
             <Link
-              href="/registration"
+              href="https://www.festivall.my/ko/events/buy-tickets/KLHC-2026"
+              target="_blank"
               className="inline-flex items-center rounded-full bg-gradient-to-r from-amber-400 to-orange-500 px-6 py-2 text-lg font-bold text-white shadow-md hover:from-amber-500 hover:to-orange-600 transition-colors"
             >
               Registration

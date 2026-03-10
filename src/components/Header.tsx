@@ -136,7 +136,6 @@ function MobileNavigation(
             <nav className="mt-6">
               <ul className="-my-2 divide-y divide-zinc-100 text-base text-zinc-800 dark:divide-zinc-100/5 dark:text-zinc-300">
                 <MobileNavItem href="/">Home</MobileNavItem>
-                <MobileNavItem href="https://campswingitkr-git-csi2025-swingit.vercel.app" target="_blank">CSI2025</MobileNavItem>
                 <MobileNavItem href="/photos">Photos</MobileNavItem>
                 <MobileNavItem href="/about">About</MobileNavItem>
                 {/* <MobileNavItem href="/articles">NOTICE</MobileNavItem>
@@ -203,8 +202,8 @@ function DesktopNavigation(props: React.ComponentPropsWithoutRef<'nav'>) {
 
         <NavItem href="/schedule">SCHEDULE</NavItem>
         <NavItem href="/venues">VENUES</NavItem>
-        <NavItem href="/registration">REGISTRATION</NavItem>
-        <NavItem href="https://campswingitkr-git-csi2025-swingit.vercel.app" target="_blank">PAST EVENTS</NavItem>
+        <NavItem href="https://www.festivall.my/ko/events/buy-tickets/KLHC-2026" target="_blank">REGISTRATION</NavItem>
+        <NavItem href="/photos">PHOTOS</NavItem>
       </ul>
     </nav>
   )
