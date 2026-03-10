@@ -1,4 +1,3 @@
-import typographyPlugin from '@tailwindcss/typography'
 import { type Config } from 'tailwindcss'
 
 import typographyStyles from './typography'
@@ -6,9 +5,9 @@ import typographyStyles from './typography'
 export default {
   darkMode: 'class',
   content: [
-    './src/**/*.{js,jsx,ts,tsx}'
+    './src/**/*.{js,jsx,ts,tsx,md,mdx}'
   ],
-  plugins: [typographyPlugin, require("tailwindcss-animate")],
+  plugins: [require('@tailwindcss/typography'), require("tailwindcss-animate")],
   theme: {
     fontSize: {
       xs: ['0.8125rem', { lineHeight: '1.5rem' }],

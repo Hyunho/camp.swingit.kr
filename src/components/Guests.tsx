@@ -26,6 +26,7 @@ const guests: Guest[] = [
     { id: 'g15', enName: 'Storm Jeon', krName: '스톰', imageUrl: '/images/2025/instructors/스톰.jpeg' },
     { id: 'g16', enName: 'Hyang Sook Noh', krName: '까미', imageUrl: '/images/2025/instructors/까미.jpeg' },
     { id: 'g17', enName: 'Joje Hyunmi Kim', krName: '조제', imageUrl: '/images/2025/instructors/조제.jpeg' },
+    { id: 'g18', enName: 'To Be Added', krName: '' },
 ]
 
 export function Guests() {

@@ -42,7 +42,7 @@ const instructorPeople: InstructorPerson[] = [
     alt: 'Ilkyu Kang & Jihee Baek',
   },
   {
-    name: 'Youngbo Shim(랭보) and Laura Hong(홍지)',
+    name: 'Youngbo Shim(랭보) & Laura Hong(홍지)',
     role: 'Instructor',
     imageUrls: [
       '/images/2026/DANCERS/Rangbo.jpeg',
