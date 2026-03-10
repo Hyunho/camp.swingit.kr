@@ -7,6 +7,7 @@ interface Staff {
   name: string
   group: StaffGroup
   imageUrl?: string
+  imageClasses?: string
 }
 
 const staffs: Staff[] = [
@@ -26,6 +27,8 @@ const staffs: Staff[] = [
     id: 'staff-chocomir',
     name: '초코미르',
     group: 'CORE',
+    imageUrl: '/images/2026/STAFF/chocomir.png',
+    imageClasses: 'object-top'
   },
   {
     id: 'staff-jungyang',
@@ -34,12 +37,12 @@ const staffs: Staff[] = [
     imageUrl: '/images/2026/STAFF/image19.jpg',
   },
   { id: 'staff-chilmyeonjo', name: '칠면조', group: 'CREW' },
-  { id: 'staff-rangbo', name: '랭보', group: 'CREW' },
-  { id: 'staff-daetteuk', name: '대뜩', group: 'CREW' },
-  { id: 'staff-elli', name: '엘리', group: 'CREW' },
-  { id: 'staff-karen', name: '카렌', group: 'CREW' },
-  { id: 'staff-sini', name: '시니', group: 'CREW' },
-  { id: 'staff-hyeonhing', name: '현힁', group: 'CREW' },
+  { id: 'staff-rangbo', name: '랭보', group: 'CREW', imageUrl: '/images/2025/instructors/랭보.jpeg', imageClasses: 'object-top' },
+  { id: 'staff-daetteuk', name: '대뜩', group: 'CREW', imageUrl: '/images/2025/staff/대뜩.jpeg', imageClasses: 'object-top' },
+  { id: 'staff-elli', name: '엘리', group: 'CREW', imageUrl: '/images/2025/staff/엘리.jpeg', imageClasses: 'object-top' },
+  { id: 'staff-karen', name: '카렌', group: 'CREW', imageUrl: '/images/2025/staff/카렌.jpeg', imageClasses: 'object-top' },
+  { id: 'staff-sini', name: '시니', group: 'CREW', imageUrl: '/images/2025/staff/시니.jpeg', imageClasses: 'object-top' },
+  { id: 'staff-hyeonhing', name: '현힁', group: 'CREW', imageUrl: '/images/2025/staff/현힁.jpeg', imageClasses: 'object-top' },
   { id: 'staff-goom', name: '굼', group: 'CREW' },
   { id: 'staff-crew-tba', name: 'TO BE ADDED', group: 'CREW' },
   { id: 'staff-maria', name: '마리아', group: 'MEDIA TEAM' },
@@ -103,7 +106,7 @@ export function Staffs() {
                             alt={`${staff.name} staff photo`}
                             fill
                             sizes="(min-width: 1024px) 16vw, (min-width: 640px) 28vw, 45vw"
-                            className="object-cover"
+                            className={`object-cover ${staff.imageClasses || ''}`}
                           />
                         ) : (
                           <div className="flex h-full w-full items-center justify-center text-sm font-semibold text-zinc-900 dark:text-zinc-100">
