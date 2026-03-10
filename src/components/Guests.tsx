@@ -40,10 +40,10 @@ export function Guests() {
                 <div className="flex flex-col gap-10">
                     <section className="rounded-2xl bg-zinc-50 p-4 dark:bg-zinc-800/40">
                         <div className="grid grid-cols-2 gap-4 sm:grid-cols-4 lg:grid-cols-5">
-                            {guests.map((guest) => (
+                            {guests.map((guest, index) => (
                                 <div
                                     key={guest.id}
-                                    className="flex flex-col items-center rounded-2xl bg-white p-2 text-center shadow dark:bg-zinc-800"
+                                    className={`flex flex-col items-center rounded-2xl bg-white p-2 text-center shadow dark:bg-zinc-800 ${index === 2 ? 'lg:col-start-1' : ''}`}
                                 >
                                     <div className="relative aspect-square w-full overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-700">
                                         {guest.imageUrl ? (
