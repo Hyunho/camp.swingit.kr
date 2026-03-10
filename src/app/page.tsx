@@ -307,7 +307,7 @@ export default async function Home() {
         <div className="max-w-3xl">
           <h1 className="text-4xl font-extrabold tracking-tight text-zinc-900 sm:text-5xl lg:text-6xl">
             KLHC 2026<br />
-            <span className="mt-2 inline-block text-2xl font-bold text-zinc-500 sm:text-3xl lg:text-4xl">
+            <span className="mt-2 inline-block text-3xl font-bold text-zinc-900 sm:text-4xl lg:text-[2.2rem] lg:leading-[2.5rem]">
               a.k.a. Camp Swing It
             </span>
           </h1>
@@ -331,10 +331,13 @@ export default async function Home() {
             <p>The Ultimate Holiday for Swing Dancers in Asia and Beyond!</p>
             <p>跨越亚洲，汇聚世界各地摇摆舞者的盛大节日！</p>
           </div>
-          <div className="mt-10">
-            <span className="inline-flex items-center rounded-full bg-gradient-to-r from-amber-400 to-orange-500 px-6 py-2 text-lg font-bold text-white shadow-md">
-              Coming Soon!
-            </span>
+          <div className="mt-10 flex gap-4">
+            <Link
+              href="/registration"
+              className="inline-flex items-center rounded-full bg-gradient-to-r from-amber-400 to-orange-500 px-6 py-2 text-lg font-bold text-white shadow-md hover:from-amber-500 hover:to-orange-600 transition-colors"
+            >
+              Registration
+            </Link>
           </div>
 
           <div className="mt-6 flex items-center gap-6">

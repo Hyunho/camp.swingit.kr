@@ -1,4 +1,7 @@
+'use client'
+
 import Image from 'next/image'
+import { useState } from 'react'
 
 interface InstructorPerson {
   name: string
@@ -61,24 +64,22 @@ function DancerCard({
   person: InstructorPerson
   singleColumn?: boolean
 }) {
+  const [isExpanded, setIsExpanded] = useState(false)
+
   return (
-    <li className="flex flex-col items-center text-left lg:items-start">
+    <li className="flex flex-col items-center text-left lg:items-start h-full">
       {person.imageUrls && person.imageUrls.length > 0 ? (
         <div
           className={
             singleColumn
               ? 'grid w-full max-w-3xl grid-cols-2 gap-4'
-              : 'grid w-full max-w-sm grid-cols-2 gap-3'
+              : 'grid w-full max-w-sm grid-cols-2 gap-3 mx-auto lg:mx-0'
           }
         >
           {person.imageUrls.map((imageUrl, imageIndex) => (
             <div
               key={imageUrl}
-              className={
-                singleColumn
-                  ? 'relative aspect-[4/5] w-full overflow-hidden rounded-2xl bg-zinc-100'
-                  : 'relative aspect-square overflow-hidden rounded-2xl bg-zinc-100'
-              }
+              className="relative aspect-square w-full overflow-hidden rounded-2xl bg-zinc-100"
             >
               <Image
                 src={imageUrl}
@@ -98,8 +99,8 @@ function DancerCard({
         <div
           className={
             singleColumn
-              ? 'relative mx-auto aspect-[16/9] w-full max-w-3xl overflow-hidden rounded-2xl bg-zinc-100'
-              : 'relative mx-auto aspect-[1/1] w-full max-w-sm overflow-hidden rounded-2xl bg-zinc-100'
+              ? 'relative mx-auto aspect-square w-full max-w-3xl overflow-hidden rounded-2xl bg-zinc-100'
+              : 'relative mx-auto lg:mx-0 aspect-square w-full max-w-sm overflow-hidden rounded-2xl bg-zinc-100'
           }
         >
           <Image
@@ -119,7 +120,7 @@ function DancerCard({
           className={
             singleColumn
               ? 'relative mx-auto flex aspect-[16/9] w-full max-w-3xl items-center justify-center rounded-2xl bg-zinc-100 text-zinc-400'
-              : 'relative mx-auto flex aspect-[1/1] w-full max-w-sm items-center justify-center rounded-2xl bg-zinc-100 text-zinc-400'
+              : 'relative mx-auto lg:mx-0 flex aspect-[4/5] w-full max-w-sm items-center justify-center rounded-2xl bg-zinc-100 text-zinc-400'
           }
         >
           Image To Be Added
@@ -129,7 +130,7 @@ function DancerCard({
         className={
           singleColumn
             ? 'mx-auto mb-2 mt-6 w-full max-w-3xl border-b pb-2 text-xl font-semibold tracking-tight text-gray-900'
-            : 'mx-auto mb-2 mt-6 w-full max-w-sm border-b pb-2 text-xl font-semibold tracking-tight text-gray-900'
+            : 'mx-auto lg:mx-0 mb-2 mt-6 w-full max-w-sm border-b pb-2 text-xl font-semibold tracking-tight text-gray-900'
         }
       >
         {person.name}
@@ -138,11 +139,19 @@ function DancerCard({
         <div
           className={
             singleColumn
-              ? 'mx-auto mt-4 w-full max-w-3xl whitespace-pre-wrap text-sm leading-6 text-gray-600'
-              : 'mx-auto mt-4 w-full max-w-xl whitespace-pre-wrap text-sm leading-6 text-gray-600'
+              ? 'mx-auto mt-4 w-full max-w-3xl text-sm leading-6 text-gray-600'
+              : 'mx-auto lg:mx-0 mt-4 w-full max-w-sm text-sm leading-6 text-gray-600 flex-grow flex flex-col'
           }
         >
-          {person.description}
+          <div className={`whitespace-pre-wrap ${!isExpanded ? 'line-clamp-[10]' : ''}`}>
+            {person.description}
+          </div>
+          <button
+            onClick={() => setIsExpanded(!isExpanded)}
+            className="mt-2 text-indigo-600 font-medium hover:text-indigo-500 self-start"
+          >
+            {isExpanded ? 'Show Less' : 'Read More'}
+          </button>
         </div>
       )}
     </li>
@@ -156,20 +165,23 @@ export function Instructors() {
         <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
           Dancers
         </h2>
-        {/* <p className="mt-6 text-lg leading-8 text-gray-600">
-          More Local Dancers will be announced. <br/>
-          (로컬 댄서 라인업이 추가로 업데이트 될 예정입니다.) 
-         </p> */}
-        {/* The 2024 artists line up of Camp Swing It is as follows. */}
       </div>
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <ul
           role="list"
-          className="mx-auto mt-12 grid max-w-2xl grid-cols-1 gap-y-16 lg:mx-0 lg:max-w-none text-left"
+          className="mx-auto mt-12 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 text-left"
         >
-          {instructorPeople.map((person) => (
-            <DancerCard key={person.name} person={person} singleColumn />
-          ))}
+          {instructorPeople.map((person, index) => {
+            // Peter and Katja (index 0 and 1) are in 2 columns.
+            // The others will take up both columns (singleColumn layout).
+            const isSingleColumn = index > 1;
+
+            return (
+              <div key={person.name} className={isSingleColumn ? "lg:col-span-2" : ""}>
+                <DancerCard person={person} singleColumn={isSingleColumn} />
+              </div>
+            )
+          })}
         </ul>
       </div>
     </div>
