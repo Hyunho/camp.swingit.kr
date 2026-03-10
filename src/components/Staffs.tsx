@@ -44,6 +44,7 @@ const staffs: Staff[] = [
   { id: 'staff-crew-tba', name: 'TO BE ADDED', group: 'CREW' },
   { id: 'staff-maria', name: '마리아', group: 'MEDIA TEAM' },
   { id: 'staff-media-tba', name: 'TO BE ADDED', group: 'MEDIA TEAM' },
+  { id: 'staff-seonghong', name: 'Seonghong Kim(독립군)', group: 'SPECIAL MATE' },
   { id: 'staff-sage-min', name: 'Sage Min', group: 'SPECIAL MATE' },
 ]
 
@@ -93,9 +94,9 @@ export function Staffs() {
                   ) : (
                     <div
                       key={staff.id}
-                      className="flex flex-col items-center rounded-2xl bg-white p-2 text-center shadow dark:bg-zinc-800"
+                      className="flex flex-col items-center rounded-none bg-white p-2 text-center shadow dark:bg-zinc-800"
                     >
-                      <div className="relative aspect-square w-full overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-700">
+                      <div className="relative aspect-square w-full overflow-hidden rounded-none bg-zinc-100 dark:bg-zinc-700">
                         {staff.imageUrl ? (
                           <Image
                             src={staff.imageUrl}
