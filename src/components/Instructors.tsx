@@ -33,22 +33,22 @@ const instructorPeople: InstructorPerson[] = [
     alt: 'Sing Lim & Zeng Weiming',
   },
   {
-    name: '뀨 & 지희',
+    name: 'Ilkyu Kang(뀨) & Jihee Baek(지희)',
     role: 'Instructor',
     imageUrls: [
       '/images/2026/DANCERS/Kkyu.png',
       '/images/2026/DANCERS/Jihee.jpeg',
     ],
-    alt: '뀨 & 지희',
+    alt: 'Ilkyu Kang & Jihee Baek',
   },
   {
-    name: '랭보 & 홍지',
+    name: 'Youngbo Shim(랭보) and Laura Hong(홍지)',
     role: 'Instructor',
     imageUrls: [
       '/images/2026/DANCERS/Rangbo.jpeg',
       '/images/2026/DANCERS/Hongji.jpeg',
     ],
-    alt: '랭보 & 홍지',
+    alt: 'Youngbo Shim & Laura Hong',
   },
 ]
 
@@ -98,7 +98,7 @@ function DancerCard({
       </h3>
       {person.description && (
         <div className="mt-4 w-full max-w-3xl text-base leading-7 text-gray-600 flex-grow flex flex-col mx-auto">
-          <div className={`whitespace-pre-wrap ${!isExpanded ? 'line-clamp-[10]' : ''}`}>
+          <div className={`whitespace-pre-wrap ${!isExpanded ? 'line-clamp-2' : ''}`}>
             {person.description}
           </div>
           <button
