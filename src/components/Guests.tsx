@@ -5,26 +5,27 @@ interface Guest {
     enName: string
     krName: string
     imageUrl?: string
+    imageClasses?: string
 }
 
 const guests: Guest[] = [
     { id: 'g1', enName: 'Thomas Latter', krName: '' },
     { id: 'g2', enName: 'Aurore Alauze', krName: '' },
-    { id: 'g3', enName: 'Hwayeon Lee', krName: '이화' },
-    { id: 'g4', enName: 'Haechang Noh', krName: '견우' },
-    { id: 'g5', enName: 'Suyeon Oh', krName: '뽈' },
-    { id: 'g6', enName: 'Rico Lim', krName: '리코' },
-    { id: 'g7', enName: 'Chloe Hong', krName: '클로이' },
-    { id: 'g8', enName: 'Heechang Jang', krName: '안단테' },
-    { id: 'g9', enName: 'Meti Cho', krName: '메티' },
-    { id: 'g10', enName: 'Tail Oh', krName: '테일' },
-    { id: 'g11', enName: 'Hago Choi', krName: '하고' },
-    { id: 'g12', enName: 'Daewoong Kim', krName: '잇츠' },
-    { id: 'g13', enName: 'Changho Cha', krName: '짜장' },
-    { id: 'g14', enName: 'Sangmi Heo', krName: '오바쟁이' },
-    { id: 'g15', enName: 'Storm Jeon', krName: '스톰' },
-    { id: 'g16', enName: 'Hyang Sook Noh', krName: '까미' },
-    { id: 'g17', enName: 'Joje Hyunmi Kim', krName: '조제' },
+    { id: 'g3', enName: 'Hwayeon Lee', krName: '이화', imageUrl: '/images/2025/instructors/이화.jpeg' },
+    { id: 'g4', enName: 'Haechang Noh', krName: '견우', imageUrl: '/images/2025/instructors/견우.jpeg' },
+    { id: 'g5', enName: 'Suyeon Oh', krName: '뽈', imageUrl: '/images/2025/instructors/뽈.jpeg' },
+    { id: 'g6', enName: 'Rico Lim', krName: '리코', imageUrl: '/images/2025/instructors/리코.jpeg' },
+    { id: 'g7', enName: 'Chloe Hong', krName: '클로이', imageUrl: '/images/2025/instructors/클로이.jpeg' },
+    { id: 'g8', enName: 'Heechang Jang', krName: '안단테', imageUrl: '/images/2025/instructors/안단테.jpeg' },
+    { id: 'g9', enName: 'Meti Cho', krName: '메티', imageUrl: '/images/2025/instructors/메티.jpeg' },
+    { id: 'g10', enName: 'Tail Oh', krName: '테일', imageUrl: '/images/2025/instructors/테일.jpeg' },
+    { id: 'g11', enName: 'Hago Choi', krName: '하고', imageUrl: '/images/2025/instructors/하고.jpeg' },
+    { id: 'g12', enName: 'Daewoong Kim', krName: '잇츠', imageUrl: '/images/2025/instructors/잇츠.jpeg' },
+    { id: 'g13', enName: 'Changho Cha', krName: '짜장', imageUrl: '/images/2025/instructors/짜장.jpeg', imageClasses: 'object-top' },
+    { id: 'g14', enName: 'Sangmi Heo', krName: '오바쟁이', imageUrl: '/images/2025/instructors/오바쟁이.jpeg', imageClasses: 'object-top' },
+    { id: 'g15', enName: 'Storm Jeon', krName: '스톰', imageUrl: '/images/2025/instructors/스톰.jpeg' },
+    { id: 'g16', enName: 'Hyang Sook Noh', krName: '까미', imageUrl: '/images/2025/instructors/까미.jpeg' },
+    { id: 'g17', enName: 'Joje Hyunmi Kim', krName: '조제', imageUrl: '/images/2025/instructors/조제.jpeg' },
 ]
 
 export function Guests() {
@@ -51,7 +52,7 @@ export function Guests() {
                                                 alt={`${guest.enName} photo`}
                                                 fill
                                                 sizes="(min-width: 1024px) 16vw, (min-width: 640px) 28vw, 45vw"
-                                                className="object-cover"
+                                                className={`object-cover ${guest.imageClasses || ''}`}
                                             />
                                         ) : (
                                             <div className="flex h-full w-full flex-col items-center justify-center p-2 text-sm font-semibold text-zinc-900 dark:text-zinc-100">
