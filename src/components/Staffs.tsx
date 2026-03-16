@@ -43,7 +43,7 @@ const staffs: Staff[] = [
   { id: 'staff-karen', name: '카렌', group: 'CREW', imageUrl: '/images/2025/staff/카렌.jpeg', imageClasses: 'object-top' },
   { id: 'staff-sini', name: '시니', group: 'CREW', imageUrl: '/images/2025/staff/시니.jpeg', imageClasses: 'object-top' },
   { id: 'staff-hyeonhing', name: '현힁', group: 'CREW', imageUrl: '/images/2025/staff/현힁.jpeg', imageClasses: 'object-top' },
-  { id: 'staff-goom', name: '굼', group: 'CREW', imageUrl: '/images/2026/STAFF/goom.png' },
+  { id: 'staff-goom', name: '굼바', group: 'CREW', imageUrl: '/images/2026/STAFF/goom.png' },
   { id: 'staff-crew-tba', name: 'TO BE ADDED', group: 'CREW' },
   { id: 'staff-maria', name: '마리아', group: 'MEDIA TEAM', imageUrl: '/images/2026/STAFF/maria.png' },
   { id: 'staff-chino', name: '치노', group: 'MEDIA TEAM', imageUrl: '/images/2026/STAFF/chino.png' },
