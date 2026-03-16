@@ -1,4 +1,4 @@
-import Image from 'next/image'
+src / components / DJs.tsximport Image from 'next/image'
 const dj_people = [
     {
         name: 'DJ 해림',

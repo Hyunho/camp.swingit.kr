@@ -39,6 +39,7 @@ const instructorPeople: InstructorPerson[] = [
       '/images/2026/DANCERS/Kkyu.png',
       '/images/2026/DANCERS/Jihee.jpeg',
     ],
+    description: `뀨와 지히는 서울을 기반으로 활동하는 스윙댄서로, 린디합과 발보아를 중심으로 다양한 스윙 스타일을 선보이고 있다.\n두 사람은 역동적인 에너지와 에어리얼이 돋보이는 다이나믹한 퍼포먼스로 잘 알려져 있다.\n린디합의 자유롭고 파워풀한 움직임과 발보아의 빠르고 섬세한 리듬을 모두 즐기며, 두 스타일을 자연스럽게 넘나드는 것이 이들의 강점이다.\n또한 지히와 뀨는 KLHC 올스타 스트릭틀리 부문 2년 연속 우승자로, 국내외 다양한 스윙댄스 행사에서 공연과 강습, 심사 등으로 활발히 활동하고 있다.\n\nJihee and Ilkyu are Seoul-based swing dancers specializing in Lindy Hop and Balboa.\nKnown for their energetic style and dynamic aerials, they bring powerful movement and exciting performances to the floor.\nThey love both the freedom and power of Lindy Hop and the fast, intricate rhythms of Balboa, seamlessly moving between the two styles.\nThey are also two-time KLHC All-Star Strictly champions and are actively involved in the international swing dance scene through teaching, performances, and judging.`,
     alt: 'Ilkyu Kang & Jihee Baek',
   },
   {
