@@ -11,6 +11,7 @@ interface Guest {
 const guests: Guest[] = [
     { id: 'g1', enName: 'Thomas Latter', krName: '' },
     { id: 'g2', enName: 'Aurore Alauze', krName: '' },
+    { id: 'g2_5', enName: 'Dela Donghyun Yoo', krName: '들라', imageUrl: '/images/2025/instructors/들라.jpeg' },
     { id: 'g3', enName: 'Hwayeon Lee', krName: '이화', imageUrl: '/images/2025/instructors/이화.jpeg' },
     { id: 'g4', enName: 'Haechang Noh', krName: '견우', imageUrl: '/images/2025/instructors/견우.jpeg' },
     { id: 'g5', enName: 'Suyeon Oh', krName: '뽈', imageUrl: '/images/2025/instructors/뽈.jpeg' },
