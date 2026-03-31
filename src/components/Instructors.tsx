@@ -1,10 +1,10 @@
 'use client'
 
 import Image from 'next/image'
-import { useState } from 'react'
+import { ReactNode, useState } from 'react'
 
 interface InstructorPerson {
-  name: string
+  name: ReactNode
   role: string
   alt: string
   description?: string
@@ -14,7 +14,11 @@ interface InstructorPerson {
 
 const instructorPeople: InstructorPerson[] = [
   {
-    name: 'Peter Loggins & Katja Završnik',
+    name: (
+      <>
+        <span className="text-red-500 font-bold">CANCELED</span> : Peter Loggins & Katja Završnik
+      </>
+    ),
     role: 'Instructor',
     imageUrls: [
       '/images/2026/DANCERS/Peter_Loggins.jpg',
@@ -128,7 +132,7 @@ export function Instructors() {
           className="mx-auto mt-12 flex flex-col gap-y-24 text-left"
         >
           {instructorPeople.map((person) => (
-            <DancerCard key={person.name} person={person} />
+            <DancerCard key={person.alt} person={person} />
           ))}
         </ul>
       </div>
