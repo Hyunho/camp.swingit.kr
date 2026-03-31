@@ -21,7 +21,6 @@ import { CheckCircleIcon } from '@heroicons/react/20/solid'
 
 import { LocalInstructors } from '@/components/LocalInstructors'
 import { Staffs } from '@/components/Staffs'
-import { Guests } from '@/components/Guests'
 import { Instructors } from '@/components/Instructors'
 import { Band } from '@/components/Band'
 
@@ -441,9 +440,6 @@ export default async function Home() {
       <div className="flex flex-col gap-y-16 py-16">
         <Container>
           <Instructors />
-        </Container>
-        <Container>
-          <Guests />
         </Container>
         <Container>
           <Band />

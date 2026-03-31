@@ -2,6 +2,7 @@
 
 import Image from 'next/image'
 import { ReactNode, useState } from 'react'
+import clsx from 'clsx'
 
 interface InstructorPerson {
   name: ReactNode
@@ -10,6 +11,7 @@ interface InstructorPerson {
   description?: string
   imageUrl?: string
   imageUrls?: string[]
+  imageClasses?: string
 }
 
 const instructorPeople: InstructorPerson[] = [
@@ -55,61 +57,65 @@ const instructorPeople: InstructorPerson[] = [
     ],
     alt: 'Youngbo Shim & Laura Hong',
   },
+  { name: 'Thomas Latter', role: 'Judge', alt: 'Thomas Latter_g1' },
+  { name: 'Aurore Alauze', role: 'Judge', alt: 'Aurore Alauze_g2' },
+  { name: 'Dela Donghyun Yoo(들라)', role: 'Judge', alt: 'Dela Donghyun Yoo_g3', imageUrl: '/images/2025/instructors/들라.jpeg' },
+  { name: 'Hwayeon Lee(이화)', role: 'Judge', alt: 'Hwayeon Lee_g4', imageUrl: '/images/2025/instructors/이화.jpeg' },
+  { name: 'Haechang Noh(견우)', role: 'Judge', alt: 'Haechang Noh_g5', imageUrl: '/images/2025/instructors/견우.jpeg' },
+  { name: 'Suyeon Oh(뽈)', role: 'Judge', alt: 'Suyeon Oh_g6', imageUrl: '/images/2025/instructors/뽈.jpeg' },
+  { name: 'Rico Lim(리코)', role: 'Judge', alt: 'Rico Lim_g7', imageUrl: '/images/2025/instructors/리코.jpeg' },
+  { name: 'Chloe Hong(클로이)', role: 'Judge', alt: 'Chloe Hong_g8', imageUrl: '/images/2025/instructors/클로이.jpeg' },
+  { name: 'Heechang Jang(안단테)', role: 'Judge', alt: 'Heechang Jang_g9', imageUrl: '/images/2025/instructors/안단테.jpeg' },
+  { name: 'Meti Cho(메티)', role: 'Judge', alt: 'Meti Cho_g10', imageUrl: '/images/2025/instructors/메티.jpeg' },
+  { name: 'Tail Oh(테일)', role: 'Judge', alt: 'Tail Oh_g11', imageUrl: '/images/2025/instructors/테일.jpeg' },
+  { name: 'Hago Choi(하고)', role: 'Judge', alt: 'Hago Choi_g12', imageUrl: '/images/2025/instructors/하고.jpeg' },
+  { name: 'Daewoong Kim(잇츠)', role: 'Judge', alt: 'Daewoong Kim_g13', imageUrl: '/images/2025/instructors/잇츠.jpeg' },
+  { name: 'Changho Cha(짜장)', role: 'Judge', alt: 'Changho Cha_g14', imageUrl: '/images/2025/instructors/짜장.jpeg', imageClasses: 'object-top' },
+  { name: 'Sangmi Heo(오바쟁이)', role: 'Judge', alt: 'Sangmi Heo_g15', imageUrl: '/images/2025/instructors/오바쟁이.jpeg', imageClasses: 'object-top' },
+  { name: 'Storm Jeon(스톰)', role: 'Judge', alt: 'Storm Jeon_g16', imageUrl: '/images/2025/instructors/스톰.jpeg' },
+  { name: 'Hyang Sook Noh(까미)', role: 'Judge', alt: 'Hyang Sook Noh_g17', imageUrl: '/images/2025/instructors/까미.jpeg' },
+  { name: 'Joje Hyunmi Kim(조제)', role: 'Judge', alt: 'Joje Hyunmi Kim_g18', imageUrl: '/images/2025/instructors/조제.jpeg' },
+  { name: 'To Be Added', role: 'Judge', alt: 'To Be Added_g19' },
 ]
 
 
 function DancerCard({
   person,
-  singleColumn = false,
 }: {
   person: InstructorPerson
-  singleColumn?: boolean
 }) {
   const [isExpanded, setIsExpanded] = useState(false)
+  const isCouple = !!(person.imageUrls && person.imageUrls.length > 0)
 
   return (
-    <li className="flex flex-col items-center text-left lg:items-center h-full max-w-4xl mx-auto w-full">
-      {person.imageUrls && person.imageUrls.length > 0 ? (
-        <div className="grid w-full max-w-3xl grid-cols-2 gap-3 mx-auto">
-          {person.imageUrls.map((imageUrl, imageIndex) => (
-            <div key={imageUrl} className="relative aspect-square w-full overflow-hidden rounded-2xl bg-zinc-100">
-              <Image
-                src={imageUrl}
-                alt={`${person.alt} ${imageIndex + 1}`}
-                fill
-                sizes="(min-width: 1024px) 24rem, (min-width: 640px) 28rem, 45vw"
-                className="object-cover"
-              />
+    <li className={clsx("flex flex-col items-center text-center h-full w-full", isCouple ? "col-span-2" : "col-span-1")}>
+      {isCouple ? (
+        <div className="grid w-full grid-cols-2 gap-3 sm:gap-4">
+          {person.imageUrls!.map((imageUrl, imageIndex) => (
+            <div key={imageUrl} className="relative aspect-square w-full overflow-hidden rounded-2xl bg-zinc-100 dark:bg-zinc-700">
+              <Image src={imageUrl} alt={`${person.alt} ${imageIndex + 1}`} fill sizes="(min-width: 1024px) 25vw, (min-width: 640px) 25vw, 50vw" className="object-cover" />
             </div>
           ))}
         </div>
       ) : person.imageUrl ? (
-        <div className="relative mx-auto w-full max-w-3xl aspect-square overflow-hidden rounded-2xl bg-zinc-100">
-          <Image
-            src={person.imageUrl}
-            alt={person.alt}
-            fill
-            sizes="(min-width: 1024px) 48rem, (min-width: 640px) 28rem, 95vw"
-            className="object-cover"
-          />
+        <div className="relative aspect-square w-full overflow-hidden rounded-2xl bg-zinc-100 dark:bg-zinc-700">
+          <Image src={person.imageUrl} alt={person.alt} fill sizes="(min-width: 1024px) 25vw, (min-width: 640px) 25vw, 50vw" className={clsx("object-cover", person.imageClasses)} />
         </div>
       ) : (
-        <div className="relative mx-auto flex w-full max-w-3xl aspect-square items-center justify-center rounded-2xl bg-zinc-100 text-zinc-400">
-          Image To Be Added
+        <div className="relative flex w-full flex-col aspect-square items-center justify-center rounded-2xl bg-zinc-100 text-zinc-500 text-sm font-semibold p-2">
+          <span className="text-zinc-600">{person.name}</span>
+          <span className="mt-2 text-xs font-normal opacity-60">Image To Be Added</span>
         </div>
       )}
-      <h3 className="mb-2 mt-6 w-full max-w-3xl border-b pb-2 text-2xl font-semibold tracking-tight text-gray-900 mx-auto text-center">
+      <h3 className="mb-2 mt-4 w-full border-b pb-2 text-base sm:text-lg font-semibold tracking-tight text-gray-900 mx-auto">
         {person.name}
       </h3>
       {person.description && (
-        <div className="mt-4 w-full max-w-3xl text-base leading-7 text-gray-600 flex-grow flex flex-col mx-auto">
-          <div className={`whitespace-pre-wrap ${!isExpanded ? 'line-clamp-2' : ''}`}>
+        <div className="mt-3 w-full text-sm leading-6 text-gray-600 flex-grow flex flex-col text-left">
+          <div className={`whitespace-pre-wrap ${!isExpanded ? 'line-clamp-3' : ''}`}>
             {person.description}
           </div>
-          <button
-            onClick={() => setIsExpanded(!isExpanded)}
-            className="mt-3 text-indigo-600 font-medium hover:text-indigo-500 self-center"
-          >
+          <button onClick={() => setIsExpanded(!isExpanded)} className="mt-2 text-indigo-600 font-medium hover:text-indigo-500 self-center">
             {isExpanded ? 'Show Less' : 'Read More'}
           </button>
         </div>
@@ -123,13 +129,13 @@ export function Instructors() {
     <div className="bg-white py-8 sm:py-12">
       <div className="mx-auto max-w-2xl lg:mx-0">
         <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl text-center lg:text-left">
-          Dancers
+          Dancers & Judges
         </h2>
       </div>
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <ul
           role="list"
-          className="mx-auto mt-12 flex flex-col gap-y-24 text-left"
+          className="mx-auto mt-12 grid grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-12 sm:gap-x-8 text-center"
         >
           {instructorPeople.map((person) => (
             <DancerCard key={person.alt} person={person} />
