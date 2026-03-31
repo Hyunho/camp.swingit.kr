@@ -389,11 +389,11 @@ export default async function Home() {
                       article={article}
                       langLabel="한국어"
                       badgeLabel={
-                        article.slug === 'csi2026-01-13-notice-kr'
+                        article.slug === 'klhc2026-instructor-change-kr'
                           ? 'New'
                           : undefined
                       }
-                      highlight={article.slug === 'csi2026-01-13-notice-kr'}
+                      highlight={article.slug === 'klhc2026-instructor-change-kr'}
                     />
                   ))}
 
@@ -407,11 +407,11 @@ export default async function Home() {
                       article={article}
                       langLabel="English"
                       badgeLabel={
-                        article.slug === 'csi2026-01-13-notice-en'
+                        article.slug === 'klhc2026-instructor-change-en'
                           ? 'New'
                           : undefined
                       }
-                      highlight={article.slug === 'csi2026-01-13-notice-en'}
+                      highlight={article.slug === 'klhc2026-instructor-change-en'}
                     />
                   ))}
 
@@ -425,11 +425,11 @@ export default async function Home() {
                       article={article}
                       langLabel="中文"
                       badgeLabel={
-                        article.slug === 'csi2026-01-13-notice-cn'
+                        article.slug === 'klhc2026-instructor-change-cn'
                           ? 'New'
                           : undefined
                       }
-                      highlight={article.slug === 'csi2026-01-13-notice-cn'}
+                      highlight={article.slug === 'klhc2026-instructor-change-cn'}
                     />
                   ))}
               </div>
