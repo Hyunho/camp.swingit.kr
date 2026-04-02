@@ -1,15 +1,45 @@
 <h1 className='not-prose text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-4'>KLHC 2026 Schedule</h1>
 
-<div className="my-8 text-center">
+<div className="my-10 flex flex-col sm:flex-row justify-center gap-4">
   <a
     href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRqDxARIJ1VqOIhWNVw72sckUs4c7O2GQjZNr5JXSS0tNNinj_FdjeyeodmjP7SrgbnclaMygtGohAE/pubhtml?gid=0&single=true"
     target="_blank"
     rel="noopener noreferrer"
-    className="inline-flex items-center gap-2 text-lg font-medium text-amber-600 hover:text-amber-700 transition-colors"
+    className="group flex w-full sm:w-auto items-center justify-between gap-4 rounded-2xl bg-zinc-50 py-3 px-5 shadow-sm ring-1 ring-zinc-200 transition-all hover:-translate-y-0.5 hover:bg-white hover:shadow-md hover:ring-amber-300 dark:bg-zinc-800/60 dark:ring-zinc-700/50 dark:hover:bg-zinc-800 dark:hover:ring-amber-500/50"
   >
-    <span>📊 View detailed schedule on Google Sheets</span>
-    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
+    <div className="flex items-center gap-4">
+      <div className="flex-shrink-0 rounded-full bg-amber-100 p-2.5 text-amber-600 shadow-sm dark:bg-amber-500/20 dark:text-amber-400">
+        <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg>
+      </div>
+      <div className="flex flex-col text-left">
+        <span className="text-sm font-bold text-zinc-900 transition-colors group-hover:text-amber-600 dark:text-zinc-100 dark:group-hover:text-amber-400">상세 일정표 (Schedule)</span>
+        <span className="text-xs font-medium text-zinc-500 dark:text-zinc-400 mt-0.5">Click to open in Google Sheets</span>
+      </div>
+    </div>
+    <svg className="w-5 h-5 ml-4 text-zinc-300 transition-all group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-amber-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
+  </a>
+
+  <a 
+    href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRqDxARIJ1VqOIhWNVw72sckUs4c7O2GQjZNr5JXSS0tNNinj_FdjeyeodmjP7SrgbnclaMygtGohAE/pubhtml?gid=171273999&single=true"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="group flex w-full sm:w-auto items-center justify-between gap-4 rounded-2xl bg-zinc-50 py-3 px-5 shadow-sm ring-1 ring-zinc-200 transition-all hover:-translate-y-0.5 hover:bg-white hover:shadow-md hover:ring-teal-300 dark:bg-zinc-800/60 dark:ring-zinc-700/50 dark:hover:bg-zinc-800 dark:hover:ring-teal-500/50"
+  >
+    <div className="flex items-center gap-4">
+      <div className="flex-shrink-0 rounded-full bg-teal-100 p-2.5 text-teal-600 shadow-sm dark:bg-teal-500/20 dark:text-teal-400">
+        <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" /></svg>
+      </div>
+      <div className="flex flex-col text-left">
+        <span className="text-sm font-bold text-zinc-900 transition-colors group-hover:text-teal-600 dark:text-zinc-100 dark:group-hover:text-teal-400">워크샵 일정표 (Workshop)</span>
+        <span className="text-xs font-medium text-zinc-500 dark:text-zinc-400 mt-0.5">Click to open in Google Sheets</span>
+      </div>
+    </div>
+    <svg className="w-5 h-5 ml-4 text-zinc-300 transition-all group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-teal-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
   </a>
 </div>
 
+## Schedule
 <img src="/images/2026/schedule.png" alt="KLHC 2026 Schedule" className="w-full rounded-2xl my-8" />
+
+## Workshop
+<img src="/images/2026/klhc/workshop.png" alt="KLHC 2026 Workshop" className="w-full rounded-2xl my-8" />
