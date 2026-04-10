@@ -9,6 +9,12 @@ export default function ScoreSheets() {
             intro="">
             <div className="flex flex-col gap-8">
                 <div className="flex flex-col gap-4">
+                    <h2 className="text-2xl font-bold">KLHC 2026</h2>
+                    <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vSLp5BZqyKQw4pAwtYWz-Py2Ia9WinLkMkB_xsGpAz7yks_Bh0Ec0tws3iLr4NpO3rWKL8n-P7CkTdK/pubhtml" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">
+                        Link to the 2026 KLHC score sheet results
+                    </a>
+                </div>
+                <div className="flex flex-col gap-4">
                     <h2 className="text-2xl font-bold">KLHC 2025</h2>
                     <a href="https://docs.google.com/spreadsheets/d/1YCoj-h8wJbMlC1OxHvSEwvXIOBtOXmz3/edit?usp=sharing&ouid=107971928372041626299&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">
                         Link to the 2025 KLHC score sheet results

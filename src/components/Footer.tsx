@@ -33,6 +33,8 @@ export function Footer() {
                 {/* <NavLink href="/uses">Uses</NavLink> */}
                 <NavLink href="/photos">Photos</NavLink>
                 <NavLink href="/score_sheets">Score Sheets</NavLink>
+                <NavLink href="https://campswingitkr-git-csi2024-swingit.vercel.app">CSI 2024</NavLink>
+                <NavLink href="https://campswingitkr-git-csi2025-swingit.vercel.app">CSI 2025</NavLink>
               </div>
               <p className="text-sm text-zinc-400 dark:text-zinc-500">
                 &copy; {new Date().getFullYear()} Swing It. All rights
