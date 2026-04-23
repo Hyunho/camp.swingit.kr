@@ -5,6 +5,20 @@ export default function Album() {
     <SimpleLayout title="CSI photos" intro="">
       <div className="space-y-12">
         <div className="bg-white rounded-lg shadow-sm p-6">
+          <h2 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl mb-6">KLHC 2026 Album</h2>
+          <div className="space-y-4">
+            <ul className="space-y-4">
+              <li className="bg-gray-50 p-4 rounded-lg hover:bg-gray-100 transition-colors">
+                <a href="https://works.do/5CzOW6d" className="text-teal-600 hover:text-teal-700 font-medium flex items-center" target="_blank" rel="noopener noreferrer">
+                  <span className="mr-2">📸</span>
+                  Photos by 썸비
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="bg-white rounded-lg shadow-sm p-6">
           <h2 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl mb-6">CSI 2025 Album</h2>
           <div className="space-y-4">
             <ul className="space-y-4">
